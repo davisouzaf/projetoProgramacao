@@ -8,27 +8,27 @@ Escultor::Escultor(){
 Escultor::~Escultor(){
 
 }
-void Escultor::setColor(float r, float g, float b, float alpha){
+void Escultor::setColor(Voxel ***v, float r, float g, float b, float alpha){
 
 }
 
-void Escultor::putVoxel(int x, int y, int z){
+void Escultor::putVoxel(Voxel ***v, int x, int y, int z){
 
 }
 
-void Escultor::cutVoxel(int x, int y, int z){
+void Escultor::cutVoxel(Voxel ***v, int x, int y, int z){
 
 }
 
-void Escultor::putBox(int x0, int x1, int y0, int y1, int z0, int z1){
+void Escultor::putBox(Voxel ***v, int x0, int x1, int y0, int y1, int z0, int z1){
 
 }
 
-void Escultor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1){
+void Escultor::cutBox(Voxel ***v, int x0, int x1, int y0, int y1, int z0, int z1){
 
 }
 
-void Escultor::putEsfera(int xc, int yc, int zc, int raio){
+void Escultor::putEsfera(Voxel ***v, int xc, int yc, int zc, int raio){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
@@ -40,7 +40,7 @@ void Escultor::putEsfera(int xc, int yc, int zc, int raio){
     }
 }
 
-void Escultor::cutEsfera(int xc, int yc, int zc, int raio){
+void Escultor::cutEsfera(Voxel ***v, int xc, int yc, int zc, int raio){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
@@ -52,7 +52,7 @@ void Escultor::cutEsfera(int xc, int yc, int zc, int raio){
     }
 }
 
-void Escultor::putElipse(int xc, int yc, int zc, int rx, int ry, int rz){
+void Escultor::putElipse(Voxel ***v, int xc, int yc, int zc, int rx, int ry, int rz){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
@@ -64,7 +64,7 @@ void Escultor::putElipse(int xc, int yc, int zc, int rx, int ry, int rz){
     }
 }
 
-void Escultor::cutElipse(int xc, int yc, int zc, int rx, int ry, int rz){
+void Escultor::cutElipse(Voxel ***v, int xc, int yc, int zc, int rx, int ry, int rz){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
