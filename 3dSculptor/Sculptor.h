@@ -3,6 +3,8 @@
 #ifndef ESCULTOR_H
 #define ESCULTOR_H
 #include <string>
+
+using namespace std;
 struct Voxel {
   float r,g,b; // Colors
   float a;// Transparency
@@ -27,8 +29,8 @@ public:
     void cutEsfera(int xc, int yc, int zc, int raio);
     void putElipse(int xc, int yc, int zc, int rx, int ry, int rz);
     void cutElipse(int xc, int yc, int zc, int rx, int ry, int rz);
-    void writeOFF(std::string filename);
-    void writeVECT(std::string filename);
+    void writeOFF(string filename);
+    void writeVECT(string filename);
 };
 
 #endif // ESCULTOR_H

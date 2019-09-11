@@ -82,6 +82,6 @@ void Sculptor::cutElipse(int xc, int yc, int zc, int rx, int ry, int rz){
     }
 }
 
-void Sculptor::writeOFF(std::string teste){
+void Sculptor::writeOFF(string teste){
 
 }
