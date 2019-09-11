@@ -6,7 +6,7 @@
 class Escultor{
 private:
     Voxel ***v;
-    int nx,ny,nz;   //dimenções
+    int nx,ny,nz;   //dimensões
     float r,g,b,a;  //cores
 
 public:
