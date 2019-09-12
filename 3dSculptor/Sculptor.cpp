@@ -6,6 +6,16 @@ Sculptor::Sculptor(int _nx, int _ny, int _nz){
     nx=_nx;
     ny=_ny;
     nz=_nz;
+    v=new Voxel**[nx];
+    for (int i=0;i<nx;i++) {
+        v[i]=new Voxel*[ny];
+        for (int j=0;j<ny;j++) {
+            v[i][j]=new Voxel[nz];
+            for (int k=0;k<nz;k++) {
+                //aqui ainda ou ver direitinho........
+            }
+        }
+    }
 }
 
 Sculptor::~Sculptor(){
@@ -19,7 +29,10 @@ void Sculptor::setColor(float r, float g, float b, float alpha){
 }
 
 void Sculptor::putVoxel(int x, int y, int z){
-
+    v[x][y][z].r=Sculptor::r;
+    v[x][y][z].g=Sculptor::g;
+    v[x][y][z].b=Sculptor::b;
+    v[x][y][z].isOn=true;
 }
 
 void Sculptor::cutVoxel(int x, int y, int z){
@@ -82,6 +95,10 @@ void Sculptor::cutElipse(int xc, int yc, int zc, int rx, int ry, int rz){
     }
 }
 
-void Sculptor::writeOFF(string teste){
+void Sculptor::writeOFF(string filename){
+
+}
+
+void Sculptor::writeVECT(string filename){
 
 }

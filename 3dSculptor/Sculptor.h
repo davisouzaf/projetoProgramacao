@@ -30,6 +30,7 @@ public:
     void putElipse(int xc, int yc, int zc, int rx, int ry, int rz);
     void cutElipse(int xc, int yc, int zc, int rx, int ry, int rz);
     void writeOFF(string filename);
+    void writeVECT(string filename);
 };
 
 #endif // ESCULTOR_H
