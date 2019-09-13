@@ -2,7 +2,6 @@
 
 #ifndef ESCULTOR_H
 #define ESCULTOR_H
-#include <string>
 
 using namespace std;
 struct Voxel {
@@ -28,8 +27,7 @@ public:
     void cutEsfera(int xc, int yc, int zc, int raio);
     void putElipse(int xc, int yc, int zc, int rx, int ry, int rz);
     void cutElipse(int xc, int yc, int zc, int rx, int ry, int rz);
-    void writeOFF(string filename);
-    void writeVECT(string filename);
+    void writeOFF(char *filename);
 };
 
 #endif // ESCULTOR_H
