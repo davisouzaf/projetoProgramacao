@@ -160,4 +160,5 @@ void Sculptor::writeOFF(char * filename){
             }
         }
     }
+    fout.close();
 }
