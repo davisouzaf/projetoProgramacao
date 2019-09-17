@@ -1,5 +1,3 @@
-
-
 #ifndef ESCULTOR_H
 #define ESCULTOR_H
 using namespace std;

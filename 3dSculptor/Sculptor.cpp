@@ -1,7 +1,7 @@
 #include "Sculptor.h"
 #include <cmath>
 #include <fstream>
-
+//evitar usar a biblioteca cmath para contas simples!!!
 Sculptor::Sculptor(int _nx, int _ny, int _nz){
     nx=_nx;
     ny=_ny;
@@ -26,10 +26,12 @@ void Sculptor::setColor(float r, float g, float b, float alpha){
 }
 
 void Sculptor::putVoxel(int x, int y, int z){
+    if(x>=0 && y>=0 && z>=0){
     v[x][y][z].r=Sculptor::r;
     v[x][y][z].g=Sculptor::g;
     v[x][y][z].b=Sculptor::b;
     v[x][y][z].isOn=true;
+    }
 }
 
 void Sculptor::cutVoxel(int x, int y, int z){
@@ -60,8 +62,7 @@ void Sculptor::putSphere(int xc, int yc, int zc, int raio){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
-                if(pow((i-xc),2)+ pow((j-yc),2)+pow((k-zc),2)<=pow(raio,2)){
-                    //   v[i][j][k]=1;
+                if(((i-xc)*(i-xc))+ ((j-yc)*(j-yc))+((k-zc)*(k-zc))<=(raio*raio)){
                     putVoxel(i,j,k);
                 }
             }
@@ -74,7 +75,7 @@ void Sculptor::cutSphere(int xc, int yc, int zc, int raio){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
                 if(pow((i-xc),2)+ pow((j-yc),2)+pow((k-zc),2)<=pow(raio,2)){
-                    // v[i][j][k]=0;
+                    cutVoxel(i,j,k);
                 }
             }
         }
@@ -85,8 +86,8 @@ void Sculptor::putEllipsoid(int xc, int yc, int zc, int rx, int ry, int rz){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
-                if(pow((i-xc/rx),2)+ pow((j-yc/ry),2)+pow((k-zc/rz),2)<=1){
-                    //v[i][j][k]=1;
+                if(((i-xc/rx)*(i-xc/rx))+ ((j-yc/ry)*(j-yc/ry))+((k-zc/rz)*(k-zc/rz))<=1){
+                    putVoxel(i,j,k);
                 }
             }
         }
@@ -97,8 +98,8 @@ void Sculptor::cutEllipsoid(int xc, int yc, int zc, int rx, int ry, int rz){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
-                if(pow((i-xc/rx),2)+ pow((j-yc/ry),2)+pow((k-zc/rz),2)<=1){
-                    //v[i][j][k]=0;
+                if(((i-xc/rx)*(i-xc/rx))+ ((j-yc/ry)*(j-yc/ry))+((k-zc/rz)*(k-zc/rz))<=1){
+                    cutVoxel(i,j,k);
                 }
             }
         }
@@ -144,7 +145,6 @@ void Sculptor::writeOFF(char * filename){
     }
     int aux=0;
     //escreve as definições das faces:
-
     for (int i=0;i<nx;i++) {
         for (int j=0;j<ny;j++) {
             for (int k=0;k<nz;k++) {
