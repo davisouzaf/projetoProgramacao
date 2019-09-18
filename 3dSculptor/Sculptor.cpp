@@ -16,7 +16,11 @@ Sculptor::Sculptor(int _nx, int _ny, int _nz){
 }
 
 Sculptor::~Sculptor(){
-
+    for(int i=0; i<nx; i++){
+        for(int j=0; j<ny; j++){
+            delete v[i][j];
+        }
+    }
 }
 void Sculptor::setColor(float r, float g, float b, float alpha){
     this->r=r;
@@ -86,7 +90,7 @@ void Sculptor::putEllipsoid(int xc, int yc, int zc, int rx, int ry, int rz){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
-                if(((i-xc/rx)*(i-xc/rx))+ ((j-yc/ry)*(j-yc/ry))+((k-zc/rz)*(k-zc/rz))<=1){
+                if((i*i-2*i*xc+xc*xc)/(rx*rx) + (j*j-2*j*yc+yc*yc)/(ry*ry)+(k*k-2*k*zc+zc*zc)/(rz*rz)<=1){
                     putVoxel(i,j,k);
                 }
             }
@@ -98,7 +102,7 @@ void Sculptor::cutEllipsoid(int xc, int yc, int zc, int rx, int ry, int rz){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
-                if(((i-xc/rx)*(i-xc/rx))+ ((j-yc/ry)*(j-yc/ry))+((k-zc/rz)*(k-zc/rz))<=1){
+                if((i*i-2*i*xc+xc*xc)/(rx*rx) + (j*j-2*j*yc+yc*yc)/(ry*ry)+(k*k-2*k*zc+zc*zc)/(rz*rz)<=1){
                     cutVoxel(i,j,k);
                 }
             }
