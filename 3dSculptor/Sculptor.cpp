@@ -1,5 +1,4 @@
-#include "Sculptor.h"
-#include <cmath>
+﻿#include "Sculptor.h"
 #include <fstream>
 //evitar usar a biblioteca cmath para contas simples!!!
 Sculptor::Sculptor(int _nx, int _ny, int _nz){
@@ -78,7 +77,7 @@ void Sculptor::cutSphere(int xc, int yc, int zc, int raio){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
-                if(pow((i-xc),2)+ pow((j-yc),2)+pow((k-zc),2)<=pow(raio,2)){
+                if(((i-xc)*(i-xc))+ ((j-yc)*(j-yc))+((k-zc)*(k-zc))<=(raio*raio)){
                     cutVoxel(i,j,k);
                 }
             }
