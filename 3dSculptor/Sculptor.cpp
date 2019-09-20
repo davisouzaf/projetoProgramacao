@@ -1,5 +1,6 @@
 ﻿#include "Sculptor.h"
 #include <fstream>
+#include<cmath>
 //evitar usar a biblioteca cmath para contas simples!!!
 Sculptor::Sculptor(int _nx, int _ny, int _nz){
     nx=_nx;
@@ -89,7 +90,7 @@ void Sculptor::putEllipsoid(int xc, int yc, int zc, int rx, int ry, int rz){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
-                if((i*i-2*i*xc+xc*xc)/(rx*rx) + (j*j-2*j*yc+yc*yc)/(ry*ry)+(k*k-2*k*zc+zc*zc)/(rz*rz)<=1){
+                if((float)((pow(i-xc,2))/(pow(rx,2)) + (pow((j-yc),2))/(pow(ry,2))+(pow(k-zc,2))/(pow(rz,2)))<=1){
                     putVoxel(i,j,k);
                 }
             }
@@ -101,7 +102,7 @@ void Sculptor::cutEllipsoid(int xc, int yc, int zc, int rx, int ry, int rz){
     for(int i=0; i<nx; i++){
         for(int j=0; j<ny; j++){
             for(int k=0; k<nz; k++){
-                if((i*i-2*i*xc+xc*xc)/(rx*rx) + (j*j-2*j*yc+yc*yc)/(ry*ry)+(k*k-2*k*zc+zc*zc)/(rz*rz)<=1){
+                if((float)((pow(i-xc,2))/(pow(rx,2)) + (pow((j-yc),2))/(pow(ry,2))+(pow(k-zc,2))/(pow(rz,2)))<=1){
                     cutVoxel(i,j,k);
                 }
             }
