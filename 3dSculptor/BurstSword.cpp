@@ -7,16 +7,16 @@ int main(){
     s.setColor(1,1,1,1);
     s.putSphere(25,25,10,5);             //pomo, centro=(25,25,25)
     
-    s.setColor(0,0,0,1);
+    //s.setColor(0,0,0,1);
     s.putBox(24,27,24,27,10,35);         //cabo
     
-    s.setColor(1,1,1,1);
+    //s.setColor(1,1,1,1);
     s.putBox(10,40,22,29,35,42);         //guarda-mao
     
     s.cutBox(20,24,22,29,35,36);         //detalhe do guarda-mao 1
     s.cutBox(27,31,22,29,35,36);         //detalhe do guarda-mao 2
     
-    s.setColor(0,0,0,1);
+    //s.setColor(0,0,0,1);
     s.putBox(12,38,23,28,42,120);        //gume da espada
     
     s.cutBox(20,31,22,23,35,42);         //detalhe do guarda-mao 3
@@ -30,7 +30,7 @@ int main(){
     s.cutBox(23,28,27,28,37,42);         //detalhe entre o gume o guarda-mao no verso
     s.putBox(24,27,27,28,38,41);         //detalhe entre o gume o guarda-mao no verso 2
     
-    s.setColor(0,0,0,1);
+    //s.setColor(0,0,0,1);
     s.putBox(19,20,22,23,35,63);
     s.putBox(20,31,22,23,62,63);         //quadrado entre os circulos do gume
     s.putBox(31,32,22,23,35,63);
