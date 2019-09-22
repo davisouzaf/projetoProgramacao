@@ -1,26 +1,33 @@
 ﻿#include "Sculptor.h"
 #include <fstream>
 #include<cmath>
-//evitar usar a biblioteca cmath para contas simples!!!
+
 Sculptor::Sculptor(int _nx, int _ny, int _nz){
     nx=_nx;
     ny=_ny;
     nz=_nz;
     v=new Voxel**[nx];
+    v[0]=new Voxel*[nx*ny];
+    v[0][0]=new Voxel[nx*ny*nz];
+    for (int i=1;i<nx;i++) {
+        v[i]=v[i-1]+ny;
+    }
+    for (int j = 1; j < nx*ny; ++j) {
+        v[0][j]=v[0][j-1]+nz;
+    }
     for (int i=0;i<nx;i++) {
-        v[i]=new Voxel*[ny];
         for (int j=0;j<ny;j++) {
-            v[i][j]=new Voxel[nz];
+            for (int k=0;k<nz;k++) {
+                v[i][j][k].isOn=false;
+            }
         }
     }
 }
 
 Sculptor::~Sculptor(){
-    for(int i=0; i<nx; i++){
-        for(int j=0; j<ny; j++){
-            delete v[i][j];
-        }
-    }
+    delete [] v[0][0];
+    delete [] v[0];
+    delete [] v;
 }
 void Sculptor::setColor(float r, float g, float b, float alpha){
     this->r=r;
