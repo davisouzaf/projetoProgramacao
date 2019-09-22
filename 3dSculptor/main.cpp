@@ -28,7 +28,7 @@ int main(){
     s.cutSphere(48,13,15,5);
     s.setColor(1,0,0,1);
     s.putEllipsoid(48,13,15,2,4,4);
-    s.writeOFF("programateste1.off");
+    s.writeOFF("programateste2.off");
     s.~Sculptor();
     cout << "Done" << endl;
     return 0;
