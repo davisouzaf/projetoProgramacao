@@ -25,7 +25,7 @@ Sculptor::~Sculptor(){
 void Sculptor::setColor(float r, float g, float b, float alpha){
     this->r=r;
     this->g=g;
-    Sculptor::b=b;
+    this->b=b;
     Sculptor::a=alpha;
 }
 
