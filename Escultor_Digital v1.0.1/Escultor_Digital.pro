@@ -9,5 +9,5 @@ SOURCES += \
         putvoxel.cpp
 
 HEADERS += \
-    figurageometrica.h \
-    putvoxel.h
+    PutVoxel.h \
+    figurageometrica.h

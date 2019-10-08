@@ -3,11 +3,11 @@
 #include "figurageometrica.h"
 
 
-class putVoxel: public FiguraGeometrica{
+class PutVoxel: public FiguraGeometrica{
 
 public:
-    putVoxel();
-    ~putVoxel();
+    PutVoxel();
+    ~PutVoxel();
     void draw(int x, int y, int z);
 };
 

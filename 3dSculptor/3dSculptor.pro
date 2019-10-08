@@ -5,7 +5,19 @@ CONFIG -= qt
 
 SOURCES += \
         Sculptor.cpp \
-        main.cpp
+        cutbox.cpp \
+        cutvoxel.cpp \
+        figurageometrica.cpp \
+        main.cpp \
+        putbox.cpp \
+        putsphere.cpp \
+        putvoxel.cpp
 
 HEADERS += \
-    Sculptor.h
+    Sculptor.h \
+    cutbox.h \
+    cutvoxel.h \
+    figurageometrica.h \
+    putbox.h \
+    putsphere.h \
+    putvoxel.h
