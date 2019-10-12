@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Sculptor.h"
+#include "sculptor.h"
 using namespace std;
 
 int main(){

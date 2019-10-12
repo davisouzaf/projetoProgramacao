@@ -4,20 +4,26 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        Sculptor.cpp \
         cutbox.cpp \
         cutvoxel.cpp \
         figurageometrica.cpp \
         main.cpp \
         putbox.cpp \
         putsphere.cpp \
-        putvoxel.cpp
+        putvoxel.cpp \
+    cutsphere.cpp \
+    putellipsoid.cpp \
+    sculptor.cpp \
+    cutellipsoid.cpp
 
 HEADERS += \
-    Sculptor.h \
     cutbox.h \
     cutvoxel.h \
     figurageometrica.h \
     putbox.h \
     putsphere.h \
-    putvoxel.h
+    putvoxel.h \
+    cutsphere.h \
+    putellipsoid.h \
+    sculptor.h \
+    cutellipsoid.h

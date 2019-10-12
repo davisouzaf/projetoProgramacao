@@ -1,6 +1,6 @@
 #ifndef FIGURAGEOMETRICA_H
 #define FIGURAGEOMETRICA_H
-#include "Sculptor.h"
+#include "sculptor.h"
 
 class FiguraGeometrica
 {
@@ -8,7 +8,7 @@ protected:
     float r,g,b,a;
 public:
     FiguraGeometrica();
-    virtual void draw(Sculptor &t);
+    virtual void draw(Sculptor &t)=0;
 };
 
 #endif // FIGURAGEOMETRICA_H

@@ -17,5 +17,6 @@ PutVoxel::~PutVoxel()
 }
 
 void PutVoxel::draw(Sculptor &t){
+    t.setColor(r,g,b,a);
     t.putVoxel(x,y,z);
 }
