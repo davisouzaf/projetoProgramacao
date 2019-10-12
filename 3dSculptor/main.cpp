@@ -22,25 +22,30 @@ int main(){
     ifstream fin;
     fin.open("/home/davi/Documentos/testeleitura.txt");
     stringstream ss;
+    int aux=0;
     while(true){
         getline(fin,s);
         if(fin.good()){
             stringstream ss(s);
             ss>>comando;
             cout<<comando<<endl;
-            //vector<*FiguraGeometrica*> f; como criar um vetor de objetos figurageometrica ???
+            vector<FiguraGeometrica*> f;
             if(comando.compare("dim")==0){
                 int nx,ny,nz;
                 ss>>nx>>ny>>nz;
-
+                Sculptor s(nx,ny,nz);
             }else if (comando.compare("putvoxel")==0){
                 int pos[3];
                 float color[4];
                 ss>>pos[0]>>pos[1]>>pos[2];
                 ss>>color[0]>>color[1]>>color[2]>>color[3];
+                f.push_back(new PutVoxel(color[0],color[1],color[2],color[3],pos[0],pos[1],pos[2]));//ainda falta testar a criação dos objetos em cada elemento do vetor!!
+                aux++;
             }else if(comando.compare("cutvoxel")==0){
                 int pos[3];
                 ss>>pos[0]>>pos[1]>>pos[2];
+                f.push_back(new CutVoxel(pos[0],pos[1],pos[2]));
+                aux++;
             }else if(comando.compare("putbox")==0){
                 int pos[6];
                 float color[4];
