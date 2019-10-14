@@ -20,65 +20,77 @@ using namespace std;
 int main(){
     string s, comando;
     ifstream fin;
-    fin.open("/home/davi/Documentos/testeleitura.txt");
+    fin.open("C:/Users/MatrizD42018/Downloads/teste.txt");
     stringstream ss;
-    int aux=0;
+    Sculptor *sc;
+    vector<FiguraGeometrica*> f;
     while(true){
         getline(fin,s);
         if(fin.good()){
             stringstream ss(s);
             ss>>comando;
             cout<<comando<<endl;
-            vector<FiguraGeometrica*> f;
             if(comando.compare("dim")==0){
                 int nx,ny,nz;
                 ss>>nx>>ny>>nz;
-                Sculptor s(nx,ny,nz);
+                sc=new Sculptor(nx,ny,nz);
             }else if (comando.compare("putvoxel")==0){
                 int pos[3];
                 float color[4];
                 ss>>pos[0]>>pos[1]>>pos[2];
                 ss>>color[0]>>color[1]>>color[2]>>color[3];
                 f.push_back(new PutVoxel(color[0],color[1],color[2],color[3],pos[0],pos[1],pos[2]));//ainda falta testar a criação dos objetos em cada elemento do vetor!!
-                aux++;
             }else if(comando.compare("cutvoxel")==0){
                 int pos[3];
                 ss>>pos[0]>>pos[1]>>pos[2];
                 f.push_back(new CutVoxel(pos[0],pos[1],pos[2]));
-                aux++;
             }else if(comando.compare("putbox")==0){
                 int pos[6];
                 float color[4];
                 ss>>pos[0]>>pos[1]>>pos[2]>>pos[3]>>pos[4]>>pos[5];
                 ss>>color[0]>>color[1]>>color[2]>>color[3];
+                f.push_back(new PutBox(pos[0],pos[1],pos[2],pos[3],pos[4],pos[5],color[0],color[1],color[2],color[3]));
             }else if (comando.compare("cutbox")==0) {
                 int pos[6];
                 ss>>pos[0]>>pos[1]>>pos[2]>>pos[3]>>pos[4]>>pos[5];
+                f.push_back(new CutBox(pos[0],pos[1],pos[2],pos[3],pos[4],pos[5]));
             }else if (comando.compare("putsphere")==0) {
                 int pos[4];
                 int color[4];
                 ss>>pos[0]>>pos[1]>>pos[2]>>pos[3];
                 ss>>color[0]>>color[1]>>color[2]>>color[3];
+                f.push_back(new PutSphere(pos[0],pos[1],pos[2],pos[3],color[0],color[1],color[2],color[3]));
             }else if (comando.compare("cutsphere")==0) {
                 int pos[4];
                 ss>>pos[0]>>pos[1]>>pos[2]>>pos[3];
+                f.push_back(new CutSphere(pos[0],pos[1],pos[2],pos[3]));
             }else if (comando.compare("putellipsoid")==0) {
                 int pos[6];
                 int color[4];
                 ss>>pos[0]>>pos[1]>>pos[2]>>pos[3]>>pos[4]>>pos[5];
                 ss>>color[0]>>color[1]>>color[2]>>color[3];
-            }else if (comando.compare("cutellipsoid")==0) {
+                f.push_back(new PutEllipsoid(pos[0],pos[1],pos[2],pos[3],pos[4],pos[5],color[0],color[1],color[2],color[3]));
+            }else if (comando.compare("cutellipsoid")==0){
                 int pos[6];
                 ss>>pos[0]>>pos[1]>>pos[2]>>pos[3]>>pos[4]>>pos[5];
+                f.push_back(new CutEllipsoid(pos[0],pos[1],pos[2],pos[3],pos[4],pos[5]));
             }
-
         }else {
             break;
         }
     }
+    for (int i = 0; i < f.size(); ++i) {
+       f[i]->draw(*sc);
+    }
+
+    sc->writeOFF("C:/Users/MatrizD42018/Downloads/testeescrita.off");
+
+    return 0;
+}
 
 
-    /*Sculptor s(50,50,150);             //pomo, centro=(25,25,25)
+
+/*Sculptor s(50,50,150);             //pomo, centro=(25,25,25)
     PutSphere ps(25,25,10,5,1,1,1,0.5);
     ps.draw(s);
 
@@ -116,6 +128,4 @@ int main(){
     s.writeOFF("/home/davi/Documentos/testesword.off");
     cout << "Done" << endl;*/
 
-    return 0;
 
-}
