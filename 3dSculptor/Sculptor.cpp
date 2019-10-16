@@ -1,7 +1,7 @@
 ﻿#include "sculptor.h"
 #include <fstream>
 #include<cmath>
-
+using namespace std;
 Sculptor::Sculptor(int _nx, int _ny, int _nz){
     nx=_nx;
     ny=_ny;

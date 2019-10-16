@@ -3,3 +3,8 @@
 FiguraGeometrica::FiguraGeometrica(){
 
 }
+
+FiguraGeometrica::~FiguraGeometrica()
+{
+
+}

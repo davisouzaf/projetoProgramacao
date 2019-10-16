@@ -20,7 +20,7 @@ using namespace std;
 int main(){
     string s, comando;
     ifstream fin;
-    fin.open("C:/Users/MatrizD42018/Downloads/teste.txt");
+    fin.open("/home/davi/Documentos/projetoProgramacao/Exemple_BusterSword.txt");
     stringstream ss;
     Sculptor *sc;
     vector<FiguraGeometrica*> f;
@@ -83,7 +83,7 @@ int main(){
        f[i]->draw(*sc);
     }
 
-    sc->writeOFF("C:/Users/MatrizD42018/Downloads/testeescrita.off");
+    sc->writeOFF("/home/davi/Documentos/testeescrita.off");
 
     return 0;
 }

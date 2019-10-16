@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3dSculptor: Sculptor Class Reference</title>
+<title>3D Sculptor: Sculptor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3dSculptor
-   &#160;<span id="projectnumber">1.0.0</span>
+   <div id="projectname">3D Sculptor
+   &#160;<span id="projectnumber">Beta 1.0.1</span>
    </div>
-   <div id="projectbrief">Manipulação de matriz tridimensional de voxels para gerar formas</div>
+   <div id="projectbrief">A Sculptor for 3d objects</div>
   </td>
  </tr>
  </tbody>
@@ -68,36 +68,53 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_sculptor_8h_source.html">Sculptor.h</a>&gt;</code></p>
+<p>A classe <a class="el" href="class_sculptor.html" title="A classe Sculptor define o espaço em que os voxels estarão alocados(como se fosse uma &quot;prancheta&quot; de ...">Sculptor</a> define o espaço em que os voxels estarão alocados(como se fosse uma "prancheta" de desenho)  
+ <a href="class_sculptor.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="sculptor_8h_source.html">sculptor.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a014e3ef5517bf0e9d9e14486b6ac6433"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#a014e3ef5517bf0e9d9e14486b6ac6433">Sculptor</a> (int _nx, int _ny, int _nz)</td></tr>
+<tr class="memdesc:a014e3ef5517bf0e9d9e14486b6ac6433"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_sculptor.html" title="A classe Sculptor define o espaço em que os voxels estarão alocados(como se fosse uma &quot;prancheta&quot; de ...">Sculptor</a> é o construtor que recebe como parâmetros os comprimentos em relação aos eixos cartesianos(x,y,z)  <a href="#a014e3ef5517bf0e9d9e14486b6ac6433">More...</a><br /></td></tr>
 <tr class="separator:a014e3ef5517bf0e9d9e14486b6ac6433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f159bf97458326f16d2e238e11be7ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#a8f159bf97458326f16d2e238e11be7ff">~Sculptor</a> ()</td></tr>
+<tr class="memdesc:a8f159bf97458326f16d2e238e11be7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Sculptor é o destrutor da classe  <a href="#a8f159bf97458326f16d2e238e11be7ff">More...</a><br /></td></tr>
 <tr class="separator:a8f159bf97458326f16d2e238e11be7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1d69da01379874b0dfd6454787cb562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#af1d69da01379874b0dfd6454787cb562">setColor</a> (float r, float g, float b, float alpha)</td></tr>
+<tr class="memdesc:af1d69da01379874b0dfd6454787cb562"><td class="mdescLeft">&#160;</td><td class="mdescRight">setColor altera a cor selecionada.  <a href="#af1d69da01379874b0dfd6454787cb562">More...</a><br /></td></tr>
 <tr class="separator:af1d69da01379874b0dfd6454787cb562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bdea3048b419d58e93074060eaa7b52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#a4bdea3048b419d58e93074060eaa7b52">putVoxel</a> (int x, int y, int z)</td></tr>
+<tr class="memdesc:a4bdea3048b419d58e93074060eaa7b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">putVoxel Insere um voxel no espaço  <a href="#a4bdea3048b419d58e93074060eaa7b52">More...</a><br /></td></tr>
 <tr class="separator:a4bdea3048b419d58e93074060eaa7b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9d714a35fc8ae16d06eb5df37c3493c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#ad9d714a35fc8ae16d06eb5df37c3493c">cutVoxel</a> (int x, int y, int z)</td></tr>
+<tr class="memdesc:ad9d714a35fc8ae16d06eb5df37c3493c"><td class="mdescLeft">&#160;</td><td class="mdescRight">cutVoxel Apaga um voxel no espaço  <a href="#ad9d714a35fc8ae16d06eb5df37c3493c">More...</a><br /></td></tr>
 <tr class="separator:ad9d714a35fc8ae16d06eb5df37c3493c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a311ad7a0fb83fc67ac1f378be8e99fe1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#a311ad7a0fb83fc67ac1f378be8e99fe1">putBox</a> (int x0, int x1, int y0, int y1, int z0, int z1)</td></tr>
+<tr class="memdesc:a311ad7a0fb83fc67ac1f378be8e99fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">putBox Insere uma caixa no espaço  <a href="#a311ad7a0fb83fc67ac1f378be8e99fe1">More...</a><br /></td></tr>
 <tr class="separator:a311ad7a0fb83fc67ac1f378be8e99fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa84a1b12b09e9e103fc8d78f8d1bc00f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#aa84a1b12b09e9e103fc8d78f8d1bc00f">cutBox</a> (int x0, int x1, int y0, int y1, int z0, int z1)</td></tr>
+<tr class="memdesc:aa84a1b12b09e9e103fc8d78f8d1bc00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">cutBox apaga uma caixa do espaço  <a href="#aa84a1b12b09e9e103fc8d78f8d1bc00f">More...</a><br /></td></tr>
 <tr class="separator:aa84a1b12b09e9e103fc8d78f8d1bc00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ad429e4c9bee30af79485b97a67885f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#a7ad429e4c9bee30af79485b97a67885f">putSphere</a> (int xc, int yc, int zc, int raio)</td></tr>
+<tr class="memdesc:a7ad429e4c9bee30af79485b97a67885f"><td class="mdescLeft">&#160;</td><td class="mdescRight">putSphere implementa uma esfera no espaço  <a href="#a7ad429e4c9bee30af79485b97a67885f">More...</a><br /></td></tr>
 <tr class="separator:a7ad429e4c9bee30af79485b97a67885f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fc1bd095f9f1019d1619673905f6cdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#a7fc1bd095f9f1019d1619673905f6cdc">cutSphere</a> (int xc, int yc, int zc, int raio)</td></tr>
+<tr class="memdesc:a7fc1bd095f9f1019d1619673905f6cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">cutSphere apaga uma esfera no espaço  <a href="#a7fc1bd095f9f1019d1619673905f6cdc">More...</a><br /></td></tr>
 <tr class="separator:a7fc1bd095f9f1019d1619673905f6cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab6773c379cee65ef0e93de25079a23d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#aab6773c379cee65ef0e93de25079a23d">putEllipsoid</a> (int xc, int yc, int zc, int rx, int ry, int rz)</td></tr>
+<tr class="memdesc:aab6773c379cee65ef0e93de25079a23d"><td class="mdescLeft">&#160;</td><td class="mdescRight">putEllipsoid implementa um elipsoide no espaço  <a href="#aab6773c379cee65ef0e93de25079a23d">More...</a><br /></td></tr>
 <tr class="separator:aab6773c379cee65ef0e93de25079a23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b3495724695476daa2e9b83df7cb03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#a84b3495724695476daa2e9b83df7cb03">cutEllipsoid</a> (int xc, int yc, int zc, int rx, int ry, int rz)</td></tr>
+<tr class="memdesc:a84b3495724695476daa2e9b83df7cb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">cutEllipsoid apaga um elipsoide no espaço  <a href="#a84b3495724695476daa2e9b83df7cb03">More...</a><br /></td></tr>
 <tr class="separator:a84b3495724695476daa2e9b83df7cb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ed61fc7cae10c4d7a895330fe5e309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sculptor.html#aa8ed61fc7cae10c4d7a895330fe5e309">writeOFF</a> (char *filename)</td></tr>
+<tr class="memdesc:aa8ed61fc7cae10c4d7a895330fe5e309"><td class="mdescLeft">&#160;</td><td class="mdescRight">writeOFF grava a escultura no formato OFF no arquivo especificado  <a href="#aa8ed61fc7cae10c4d7a895330fe5e309">More...</a><br /></td></tr>
 <tr class="separator:aa8ed61fc7cae10c4d7a895330fe5e309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A classe <a class="el" href="class_sculptor.html" title="A classe Sculptor define o espaço em que os voxels estarão alocados(como se fosse uma &quot;prancheta&quot; de ...">Sculptor</a> define o espaço em que os voxels estarão alocados(como se fosse uma "prancheta" de desenho) </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a014e3ef5517bf0e9d9e14486b6ac6433"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a014e3ef5517bf0e9d9e14486b6ac6433">&#9670;&nbsp;</a></span>Sculptor()</h2>
 
@@ -130,6 +147,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="class_sculptor.html" title="A classe Sculptor define o espaço em que os voxels estarão alocados(como se fosse uma &quot;prancheta&quot; de ...">Sculptor</a> é o construtor que recebe como parâmetros os comprimentos em relação aos eixos cartesianos(x,y,z) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_nx</td><td></td></tr>
+    <tr><td class="paramname">_ny</td><td></td></tr>
+    <tr><td class="paramname">_nz</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a8f159bf97458326f16d2e238e11be7ff"></a>
@@ -146,6 +173,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>~Sculptor é o destrutor da classe </p>
 
 </div>
 </div>
@@ -200,6 +229,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>cutBox apaga uma caixa do espaço </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x0</td><td></td></tr>
+    <tr><td class="paramname">x1</td><td></td></tr>
+    <tr><td class="paramname">y0</td><td></td></tr>
+    <tr><td class="paramname">y1</td><td></td></tr>
+    <tr><td class="paramname">z0</td><td></td></tr>
+    <tr><td class="paramname">z1</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a84b3495724695476daa2e9b83df7cb03"></a>
@@ -252,6 +294,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>cutEllipsoid apaga um elipsoide no espaço </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xc</td><td></td></tr>
+    <tr><td class="paramname">yc</td><td></td></tr>
+    <tr><td class="paramname">zc</td><td></td></tr>
+    <tr><td class="paramname">rx</td><td></td></tr>
+    <tr><td class="paramname">ry</td><td></td></tr>
+    <tr><td class="paramname">rz</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a7fc1bd095f9f1019d1619673905f6cdc"></a>
@@ -292,6 +347,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>cutSphere apaga uma esfera no espaço </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xc</td><td></td></tr>
+    <tr><td class="paramname">yc</td><td></td></tr>
+    <tr><td class="paramname">zc</td><td></td></tr>
+    <tr><td class="paramname">raio</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad9d714a35fc8ae16d06eb5df37c3493c"></a>
@@ -325,6 +391,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>cutVoxel Apaga um voxel no espaço </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">z</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -378,6 +454,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>putBox Insere uma caixa no espaço </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x0</td><td></td></tr>
+    <tr><td class="paramname">x1</td><td></td></tr>
+    <tr><td class="paramname">y0</td><td></td></tr>
+    <tr><td class="paramname">y1</td><td></td></tr>
+    <tr><td class="paramname">z0</td><td></td></tr>
+    <tr><td class="paramname">z1</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aab6773c379cee65ef0e93de25079a23d"></a>
@@ -430,6 +519,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>putEllipsoid implementa um elipsoide no espaço </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xc</td><td></td></tr>
+    <tr><td class="paramname">yc</td><td></td></tr>
+    <tr><td class="paramname">zc</td><td></td></tr>
+    <tr><td class="paramname">rx</td><td></td></tr>
+    <tr><td class="paramname">ry</td><td></td></tr>
+    <tr><td class="paramname">rz</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a7ad429e4c9bee30af79485b97a67885f"></a>
@@ -470,6 +572,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>putSphere implementa uma esfera no espaço </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xc</td><td></td></tr>
+    <tr><td class="paramname">yc</td><td></td></tr>
+    <tr><td class="paramname">zc</td><td></td></tr>
+    <tr><td class="paramname">raio</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4bdea3048b419d58e93074060eaa7b52"></a>
@@ -503,6 +616,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>putVoxel Insere um voxel no espaço </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">z</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -544,6 +667,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>setColor altera a cor selecionada. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td></td></tr>
+    <tr><td class="paramname">g</td><td></td></tr>
+    <tr><td class="paramname">b</td><td></td></tr>
+    <tr><td class="paramname">alpha</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aa8ed61fc7cae10c4d7a895330fe5e309"></a>
@@ -562,10 +696,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>writeOFF grava a escultura no formato OFF no arquivo especificado </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_sculptor_8h_source.html">Sculptor.h</a></li>
+<li><a class="el" href="sculptor_8h_source.html">sculptor.h</a></li>
 <li><a class="el" href="_sculptor_8cpp.html">Sculptor.cpp</a></li>
 </ul>
 </div><!-- contents -->
