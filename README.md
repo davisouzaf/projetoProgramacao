@@ -14,8 +14,8 @@
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-0pky">Sculptor(int _nx, int _ny, int _nz)</th>
-    <th class="tg-0pky">Construtor da classe</th>
+    <td class="tg-0pky">Sculptor(int _nx, int _ny, int _nz)</td>
+    <td class="tg-0pky">Construtor da classe</td>
   </tr>
   <tr>
     <td class="tg-0pky">~Sculptor(int _nx, int _ny, int _nz)</td>
