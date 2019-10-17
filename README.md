@@ -74,23 +74,43 @@
     <p>Os métodos da classe são:</p>
     <ul>
       <li>Cutvoxel(r,g,b,a,x,y,z):construtor que recebe os parâmetros de posição no espaço</li>
-      <li>draw(&t):desenha um voxel para o objeto Sculptor especificado</li>
+      <li>draw(&t):apaga um voxel para o objeto Sculptor especificado</li>
     </ul>
     <li><b>PutBox</b>:Uma caixa é especificada para desenho conforme os limites espaciais fornecidos para as três dimensões, sua cor e transparência.</li>
     <p>Os métodos da classe são:</p>
     <ul>
       <li>PutBox(x0,x1,y0,y1,z0,z1,r,g,b,a):construtor que recebe os parâmetros de espaço que o delimita no espaço,cor e transparência</li>
-      <li>draw(&t):desenha um voxel para o objeto Sculptor especificado</li>
+      <li>draw(&t):desenha uma caixa para o objeto Sculptor especificado</li>
     </ul>
     <li><b>CutBox:</b>Uma caixa é especificada para desenho conforme os limites espaciais fornecidos para as três dimensões para ser apagada</li>
     <p>Os métodos da classe são:</p>
     <ul>
       <li>CutBox(x0,x1,y0,y1,z0,z1,):construtor que recebe os parâmetros de espaço que o delimita no espaço</li>
-      <li>draw(&t):desenha um voxel para o objeto Sculptor especificado</li>
+      <li>draw(&t):apaga uma caixa para o objeto Sculptor especificado</li>
     </ul>
-  <li>PutSphere</li>
-  <li>CutSphere</li>
-  <li>PutEllipsoid</li>
-  <li>CutEllipsoid</li>
+    <li><b>PutSphere:</b>Uma esfera é especificada para desenho conforme a posição do centro, seu raio em pixels, bem como sua cor e transparência</li>
+    <p>Os métodos da classe são:</p>
+    <ul>
+      <li>PutSphere(x,y,z,raio,r,g,b,a):construtor que recebe os parâmetros de posição do centro , raio, cor e transparência</li>
+      <li>draw(&t):desenha uma esfera para o objeto Sculptor especificado</li>
+    </ul>
+  <li><b>CutSphere:</b>Uma esfera é especificada para ser apagada do desenho conforme a posição do centro e seu raio em pixels</li>
+    <p>Os métodos da classe são:</p>
+    <ul>
+      <li>CutSphere(xc,yc,zc,r):construtor que recebe os parâmetros de posição do centro e raio</li>
+      <li>draw(&t):apaga uma esfera para o objeto Sculptor especificado</li>
+    </ul>
+    <li><b>PutEllipsoid:</b> Um elipsoide é especificado para o desenho conforme os parâmetros de posição do centro, comprimentos dos raios, cor e transparência</li>
+    <p>Os métodos da classe são:</p>
+    <ul>
+      <li>PutEllipsoid(x,y,z,rx,ry,rz,r,g,b,a):construtor que recebe os parâmetros de posição do centro, os raios em relação a cada eixo, a cor e a transparência</li>
+      <li>draw(&t):desenha um elipsoide para o objeto Sculptor especificado</li>
+    </ul>
+    <li><b>CutEllipsoid:</b> Um elipsoide é especificado para o desenho conforme os parâmetros de posição do centro, comprimentos dos raios</li>
+    <p>Os métodos da classe são:</p>
+    <ul>
+      <li>CutEllipsoid(x,y,z,rx,ry,rz):construtor que recebe os parâmetros de posição do centro e os raios em relação a cada eixo</li>
+      <li>draw(&t):apaga um elipsoide para o objeto Sculptor especificado</li>
+    </ul>
   </ol>
 </ul>
