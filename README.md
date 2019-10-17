@@ -64,10 +64,30 @@
   </ul>
   <h5>As classes que herdam de FiguraGeométrica são: </h5>
   <ol>
-  <li>PutVoxel</li>
-  <li>CutVoxel</li>
-  <li>PutBox</li>
-  <li>CutVoxel</li>
+    <li><b>PutVoxel:</b>Um voxel é especificado no desenho de acordo com sua cor, posição no espaço e transparência</li>
+    <p>Os métodos da classe são:</p>
+    <ul>
+      <li>PutVoxel(r,g,b,a,x,y,z):construtor que recebe os parâmetros de cor, transparência e posição no espaço</li>
+      <li>draw(&t):desenha um voxel para o objeto Sculptor especificado</li>
+    </ul>
+    <li><b>CutVoxel:</b>Um voxel é especificado no desenho de acordo com sua posição no espaço para ser apagado</li>
+    <p>Os métodos da classe são:</p>
+    <ul>
+      <li>Cutvoxel(r,g,b,a,x,y,z):construtor que recebe os parâmetros de posição no espaço</li>
+      <li>draw(&t):desenha um voxel para o objeto Sculptor especificado</li>
+    </ul>
+    <li><b>PutBox</b>:Uma caixa é especificada para desenho conforme os limites espaciais fornecidos para as três dimensões, sua cor e transparência.</li>
+    <p>Os métodos da classe são:</p>
+    <ul>
+      <li>PutBox(x0,x1,y0,y1,z0,z1,r,g,b,a):construtor que recebe os parâmetros de espaço que o delimita no espaço,cor e transparência</li>
+      <li>draw(&t):desenha um voxel para o objeto Sculptor especificado</li>
+    </ul>
+    <li><b>CutBox:</b>Uma caixa é especificada para desenho conforme os limites espaciais fornecidos para as três dimensões para ser apagada</li>
+    <p>Os métodos da classe são:</p>
+    <ul>
+      <li>CutBox(x0,x1,y0,y1,z0,z1,):construtor que recebe os parâmetros de espaço que o delimita no espaço</li>
+      <li>draw(&t):desenha um voxel para o objeto Sculptor especificado</li>
+    </ul>
   <li>PutSphere</li>
   <li>CutSphere</li>
   <li>PutEllipsoid</li>
