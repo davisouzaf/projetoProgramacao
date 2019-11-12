@@ -31,14 +31,4 @@ void Plotter::paintEvent(QPaintEvent *event)
         x+=width()/10;
     }
 
-
-    /*
-    painter.drawRect(0,0,width(),height());
-    painter.setPen(pen);
-
-    pen.setStyle(Qt::DashLine);
-    painter.setPen(pen);
-
-    painter.drawLine(0,height()/2,width(),height()/2);
-    */
 }
