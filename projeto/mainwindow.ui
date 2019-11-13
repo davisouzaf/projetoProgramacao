@@ -17,9 +17,9 @@
    <widget class="Plotter" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>70</y>
-      <width>571</width>
+      <x>60</x>
+      <y>80</y>
+      <width>281</width>
       <height>281</height>
      </rect>
     </property>
@@ -47,7 +47,7 @@
      <item row="0" column="1">
       <widget class="QSlider" name="horizontalSliderZ">
        <property name="maximum">
-        <number>99</number>
+        <number>10</number>
        </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -59,7 +59,7 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>60</x>
       <y>0</y>
       <width>575</width>
       <height>64</height>
@@ -130,8 +130,8 @@
    <widget class="QPushButton" name="ColorButton">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>340</y>
+      <x>390</x>
+      <y>300</y>
       <width>89</width>
       <height>51</height>
      </rect>
@@ -140,11 +140,11 @@
      <string>Select Color</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>120</y>
+      <x>390</x>
+      <y>90</y>
       <width>82</width>
       <height>201</height>
      </rect>
@@ -206,6 +206,24 @@
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>50</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Current Color</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -225,7 +243,14 @@
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -249,6 +274,11 @@
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
    </property>
   </action>
  </widget>

@@ -17,13 +17,14 @@ int dimDialog::getX()
 {
     return ui->horizontalSliderX->value();
 }
-
 int dimDialog::getY()
 {
     return ui->horizontalSliderY->value();
 }
-
 int dimDialog::getZ()
 {
     return ui->horizontalSliderZ->value();
 }
+
+
+

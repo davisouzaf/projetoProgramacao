@@ -3,6 +3,7 @@
 
 #include <QDialog>
 
+#include <plotter.h>
 namespace Ui {
 class dimDialog;
 }

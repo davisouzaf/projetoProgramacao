@@ -6,6 +6,7 @@
 #include "QColor"
 #include "boxdialog.h"
 #include "ellipsoiddialog.h"
+#include "QColorDialog"
 namespace Ui {
 class MainWindow;
 }
@@ -22,6 +23,9 @@ public:
 public slots:
     void on_pushButtonDim_clicked();
     void on_pushButtonCutBox_clicked();
+
+private slots:
+    void on_ColorButton_clicked();
 
 private:
     Ui::MainWindow *ui;

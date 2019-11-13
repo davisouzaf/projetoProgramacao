@@ -5,14 +5,22 @@
 #include <QPainter>
 #include <QPen>
 #include <QBrush>
+
 class Plotter : public QWidget
 {
     Q_OBJECT
 private:
-
+    int x=10,y=10,z=10;
 public:
    explicit Plotter(QWidget *parent= nullptr);
    void paintEvent(QPaintEvent *event);
+   void setX(int);
+   void setY(int);
+   void setZ(int);
+
+//   void setX(int);
+//   void setY(int);
+//   void setZ(int);
 
 };
 
