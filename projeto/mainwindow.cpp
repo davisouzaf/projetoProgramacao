@@ -6,6 +6,15 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(ui->widget,
+            SIGNAL(mouseX(int)),
+            ui->lcdNumber,
+            SLOT(display(int)));
+
+    connect(ui->widget,
+            SIGNAL(mouseY(int)),
+            ui->lcdNumber_2,
+            SLOT(display(int)));
 }
 
 MainWindow::~MainWindow()

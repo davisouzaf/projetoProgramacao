@@ -2,10 +2,8 @@
 #define PLOTTER_H
 
 #include <QWidget>
-#include <QPainter>
-#include <QPen>
-#include <QBrush>
 #include <QAction>
+
 class Plotter : public QWidget
 {
     Q_OBJECT
@@ -18,7 +16,9 @@ public:
    void setX(int);
    void setY(int);
    void setZ(int);
-
+signals:
+   void mouseX(int);
+   void mouseY(int);
 //   void setX(int);
 //   void setY(int);
 //   void setZ(int);

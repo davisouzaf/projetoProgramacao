@@ -1,5 +1,10 @@
 #include "plotter.h"
-
+#include <QPainter>
+#include <QPen>
+#include <QBrush>
+#include <QEvent>
+#include <QMouseEvent>
+#include <QDebug>
 
 Plotter::Plotter(QWidget *parent) : QWidget(parent){
 
@@ -32,11 +37,19 @@ void Plotter::paintEvent(QPaintEvent *event)
 
 void Plotter::mousePressEvent(QMouseEvent *event)
 {
-    /*int x,y;
+    int x, y;
     x=event->x();
     y=event->y();
+    int clinha=height()/this->x;
+    int ccoluna=width()/this->y;
+
+
+    qDebug()<<x<<y;
+    x=(x/clinha)+1;
+    y=(y/ccoluna)+1;
     emit mouseX(x);
-    */
+    emit mouseY(y);
+    qDebug()<<clinha<<ccoluna;
 }
 
 void Plotter::setX(int x){
