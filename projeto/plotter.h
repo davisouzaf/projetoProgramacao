@@ -5,7 +5,7 @@
 #include <QPainter>
 #include <QPen>
 #include <QBrush>
-
+#include <QAction>
 class Plotter : public QWidget
 {
     Q_OBJECT
@@ -14,6 +14,7 @@ private:
 public:
    explicit Plotter(QWidget *parent= nullptr);
    void paintEvent(QPaintEvent *event);
+   void mousePressEvent(QMouseEvent *event);
    void setX(int);
    void setY(int);
    void setZ(int);

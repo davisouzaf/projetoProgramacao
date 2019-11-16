@@ -12,7 +12,7 @@ void Plotter::paintEvent(QPaintEvent *event)
     QPen pen;
     QBrush brush;
     //painter.setRenderHint(QPainter::Antialiasing);
-    brush.setColor(QColor(0,255,0));
+    brush.setColor(QColor(255,255,255));
     brush.setStyle(Qt::SolidPattern);
     pen.setColor(QColor(0,0,0));
     pen.setWidth(1);
@@ -20,17 +20,23 @@ void Plotter::paintEvent(QPaintEvent *event)
     painter.setPen(pen);
     painter.setBrush(brush);
     int auxx=0,auxy=0;
-
-    for(int i=1;i<=this->x+1;i++){
-        painter.drawLine(0,auxy,width(),auxy);
-        auxy+=height()/this->x;
+    for (int i=1;i<=this->x;i++) {
+        auxx=0;
+        for (int j=1;j<=this->y;j++) {
+            painter.drawRect(auxx,auxy,width()/this->y,height()/this->x);
+            auxx+=(float)(width()/this->y);
+        }
+        auxy+=(float)(height()/this->x);
     }
+}
 
-    for (int i=1;i<=this->y+1;i++) {
-        painter.drawLine(auxx,0,auxx,height());
-        auxx+=width()/this->y;
-    }
-
+void Plotter::mousePressEvent(QMouseEvent *event)
+{
+    /*int x,y;
+    x=event->x();
+    y=event->y();
+    emit mouseX(x);
+    */
 }
 
 void Plotter::setX(int x){
@@ -42,7 +48,7 @@ void Plotter::setY(int y)
     this->y=y;
 }
 
-void Plotter::setZ(int y)
+void Plotter::setZ(int z)
 {
     this->z=z;
 }

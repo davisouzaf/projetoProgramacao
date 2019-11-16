@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "QDebug"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -17,15 +16,16 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButtonDim_clicked()
 {
     dimDialog d;
-    d.setModal(true);
-    d.exec();
+    //d.setModal(true);
+    if(d.exec()==QDialog::Accepted && d.getX()!=0 && d.getY()!=0 && d.getZ()!=0){
     ui->widget->setX(d.getX());
     ui->widget->setY(d.getY());
-
     ui->widget->setZ(d.getZ());
     ui->horizontalSliderZ->setMaximum(d.getZ());
     repaint();
-
+    }else if (d.getX()==0 || d.getY()==0 || d.getZ()==0) {
+        QMessageBox::information(this, tr("Erro"),tr("\nvalores inválidos, tente outra vez!\n"));
+    }
 }
 
 void MainWindow::on_pushButtonCutBox_clicked()
@@ -44,5 +44,9 @@ void MainWindow::on_ColorButton_clicked()
         QPalette palette = ui->label_5->palette();
         palette.setColor(ui->label_5->foregroundRole(), colorDialog.selectedColor());
         ui->label_5->setPalette(palette);
+        ui->verticalSlider->setValue(colorDialog.selectedColor().red());
+        ui->verticalSlider_2->setValue(colorDialog.selectedColor().green());
+        ui->verticalSlider_3->setValue(colorDialog.selectedColor().blue());
     //}
+
 }
