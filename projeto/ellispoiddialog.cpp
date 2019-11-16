@@ -12,3 +12,18 @@ EllispoidDialog::~EllispoidDialog()
 {
     delete ui;
 }
+
+int EllispoidDialog::getRx()
+{
+    return ui->XSlider->value();
+}
+
+int EllispoidDialog::getRy()
+{
+    return ui->YSlider->value();
+}
+
+int EllispoidDialog::getRz()
+{
+    return ui->ZSlider->value();
+}

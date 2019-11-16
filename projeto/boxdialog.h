@@ -14,10 +14,10 @@ class boxDialog : public QDialog
 public:
     explicit boxDialog(QWidget *parent = nullptr);
     ~boxDialog();
-
     int getX();
     int getY();
     int getZ();
+
 private:
     Ui::boxDialog *ui;
 };

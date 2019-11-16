@@ -17,286 +17,217 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="Plotter" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>80</y>
-      <width>281</width>
-      <height>281</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>370</y>
-      <width>571</width>
-      <height>46</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="2">
-      <widget class="QLCDNumber" name="lcdNumberZ"/>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Plano Z:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QSlider" name="horizontalSliderZ">
-       <property name="maximum">
-        <number>10</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>0</y>
-      <width>575</width>
-      <height>64</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_2">
-     <item row="0" column="7">
-      <widget class="QPushButton" name="pushButtonCutEllip">
-       <property name="text">
-        <string>CutEllipsoid</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
-      <widget class="QPushButton" name="pushButtonPutSphere">
-       <property name="text">
-        <string>PutSphere</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QPushButton" name="pushButtonPutBox">
-       <property name="text">
-        <string>PutBox</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="5">
-      <widget class="QPushButton" name="pushButtonCurSphere">
-       <property name="text">
-        <string>CutSphere</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QPushButton" name="pushButtonCutBox">
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="cube.qrc">
-         <normaloff>:/iconfinder_Rubics_Cube_toy_magic_cube_geek_3186861.svg</normaloff>:/iconfinder_Rubics_Cube_toy_magic_cube_geek_3186861.svg</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>25</width>
-         <height>25</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QPushButton" name="pushButtonDim">
-       <property name="text">
-        <string>SetDim</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="6">
-      <widget class="QPushButton" name="pushButtonPutEllip">
-       <property name="text">
-        <string>PutEllipsoid</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QPushButton" name="ColorButton">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>300</y>
-      <width>89</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Select Color</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>90</y>
-      <width>86</width>
-      <height>201</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
-       <item>
-        <widget class="QSlider" name="verticalSlider">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>R</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QSlider" name="verticalSlider_2">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>G</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QSlider" name="verticalSlider_3">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>B</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>50</y>
-      <width>111</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Current Color</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>90</y>
-      <width>67</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>X</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>140</y>
-      <width>67</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Y</string>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="lcdNumber">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>110</y>
-      <width>64</width>
-      <height>23</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="lcdNumber_2">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>160</y>
-      <width>64</width>
-      <height>23</height>
-     </rect>
-    </property>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="7">
+       <widget class="QPushButton" name="pushButtonCutEllip">
+        <property name="text">
+         <string>CutEllipsoid</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="pushButtonPutSphere">
+        <property name="text">
+         <string>PutSphere</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pushButtonPutBox">
+        <property name="text">
+         <string>PutBox</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="pushButtonCutSphere">
+        <property name="text">
+         <string>CutSphere</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pushButtonCutBox">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="cube.qrc">
+          <normaloff>:/iconfinder_Rubics_Cube_toy_magic_cube_geek_3186861.svg</normaloff>:/iconfinder_Rubics_Cube_toy_magic_cube_geek_3186861.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButtonDim">
+        <property name="text">
+         <string>SetDim</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QPushButton" name="pushButtonPutEllip">
+        <property name="text">
+         <string>PutEllipsoid</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Current Color</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="Plotter" name="widget" native="true"/>
+    </item>
+    <item row="3" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QSlider" name="verticalSlider">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>R</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QSlider" name="verticalSlider_2">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>G</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QSlider" name="verticalSlider_3">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>B</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLCDNumber" name="lcdNumber">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLCDNumber" name="lcdNumber_2"/>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="ColorButton">
+      <property name="text">
+       <string>Select Color</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="2">
+       <widget class="QLCDNumber" name="lcdNumberZ"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Plano Z:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSlider" name="horizontalSliderZ">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -304,7 +235,7 @@
      <x>0</x>
      <y>0</y>
      <width>704</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

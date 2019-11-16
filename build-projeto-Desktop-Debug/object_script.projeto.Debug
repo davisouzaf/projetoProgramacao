@@ -1,0 +1,14 @@
+debug/main.o
+debug/boxdialog.o
+debug/ellispoiddialog.o
+debug/mainwindow.o
+debug/plotter.o
+debug/dimdialog.o
+debug/spheredialog.o
+debug/qrc_cube.o
+debug/moc_mainwindow.o
+debug/moc_boxdialog.o
+debug/moc_ellispoiddialog.o
+debug/moc_plotter.o
+debug/moc_dimdialog.o
+debug/moc_spheredialog.o

@@ -15,6 +15,14 @@ MainWindow::MainWindow(QWidget *parent) :
             SIGNAL(mouseY(int)),
             ui->lcdNumber_2,
             SLOT(display(int)));
+
+    connect(ui->actionExit, &QAction::triggered,
+            this, &MainWindow::finaliza);
+
+    //connect(ui->pushButtonPutBox, &QPushButton::clicked, this, SLOT(on_pushButtonCutBox_clicked()));
+    //connect(ui->pushButtonCutSphere, &QPushButton::clicked, this, SLOT(on_pushButtonPutSphere_clicked()));
+    //connect(ui->pushButtonCutEllip, &QPushButton::clicked, this, SLOT(on_pushButtonPutEllip_clicked()));
+
 }
 
 MainWindow::~MainWindow()
@@ -58,4 +66,23 @@ void MainWindow::on_ColorButton_clicked()
         ui->verticalSlider_3->setValue(colorDialog.selectedColor().blue());
     //}
 
+}
+
+void MainWindow::finaliza()
+{
+    close();
+}
+
+void MainWindow::on_pushButtonPutSphere_clicked()
+{
+    SphereDialog s;
+    s.setModal(true);
+    s.exec();
+}
+
+void MainWindow::on_pushButtonPutEllip_clicked()
+{
+    EllispoidDialog e;
+    e.setModal(true);
+    e.exec();
 }
