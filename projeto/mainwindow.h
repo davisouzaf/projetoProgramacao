@@ -25,11 +25,11 @@ public:
 
 public slots:
     void on_pushButtonDim_clicked();
-    void on_pushButtonCutBox_clicked();
+    void pushButtonCutBox_clicked();
     void on_ColorButton_clicked();
     void finaliza();
-    void on_pushButtonPutSphere_clicked();
-    void on_pushButtonPutEllip_clicked();
+    void pushButtonPutSphere_clicked();
+    void pushButtonPutEllip_clicked();
 
 private:
     Ui::MainWindow *ui;

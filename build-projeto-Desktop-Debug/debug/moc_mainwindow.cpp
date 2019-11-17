@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[8];
-    char stringdata0[158];
+    char stringdata0[149];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,18 +35,18 @@ static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
 QT_MOC_LITERAL(1, 11, 24), // "on_pushButtonDim_clicked"
 QT_MOC_LITERAL(2, 36, 0), // ""
-QT_MOC_LITERAL(3, 37, 27), // "on_pushButtonCutBox_clicked"
-QT_MOC_LITERAL(4, 65, 22), // "on_ColorButton_clicked"
-QT_MOC_LITERAL(5, 88, 8), // "finaliza"
-QT_MOC_LITERAL(6, 97, 30), // "on_pushButtonPutSphere_clicked"
-QT_MOC_LITERAL(7, 128, 29) // "on_pushButtonPutEllip_clicked"
+QT_MOC_LITERAL(3, 37, 24), // "pushButtonCutBox_clicked"
+QT_MOC_LITERAL(4, 62, 22), // "on_ColorButton_clicked"
+QT_MOC_LITERAL(5, 85, 8), // "finaliza"
+QT_MOC_LITERAL(6, 94, 27), // "pushButtonPutSphere_clicked"
+QT_MOC_LITERAL(7, 122, 26) // "pushButtonPutEllip_clicked"
 
     },
     "MainWindow\0on_pushButtonDim_clicked\0"
-    "\0on_pushButtonCutBox_clicked\0"
+    "\0pushButtonCutBox_clicked\0"
     "on_ColorButton_clicked\0finaliza\0"
-    "on_pushButtonPutSphere_clicked\0"
-    "on_pushButtonPutEllip_clicked"
+    "pushButtonPutSphere_clicked\0"
+    "pushButtonPutEllip_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -89,11 +89,11 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_pushButtonDim_clicked(); break;
-        case 1: _t->on_pushButtonCutBox_clicked(); break;
+        case 1: _t->pushButtonCutBox_clicked(); break;
         case 2: _t->on_ColorButton_clicked(); break;
         case 3: _t->finaliza(); break;
-        case 4: _t->on_pushButtonPutSphere_clicked(); break;
-        case 5: _t->on_pushButtonPutEllip_clicked(); break;
+        case 4: _t->pushButtonPutSphere_clicked(); break;
+        case 5: _t->pushButtonPutEllip_clicked(); break;
         default: ;
         }
     }

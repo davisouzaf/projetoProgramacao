@@ -19,9 +19,14 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionExit, &QAction::triggered,
             this, &MainWindow::finaliza);
 
-    //connect(ui->pushButtonPutBox, &QPushButton::clicked, this, SLOT(on_pushButtonCutBox_clicked()));
-    //connect(ui->pushButtonCutSphere, &QPushButton::clicked, this, SLOT(on_pushButtonPutSphere_clicked()));
-    //connect(ui->pushButtonCutEllip, &QPushButton::clicked, this, SLOT(on_pushButtonPutEllip_clicked()));
+    connect(ui->pushButtonPutBox, SIGNAL(clicked()), this, SLOT(pushButtonCutBox_clicked()));
+    connect(ui->pushButtonCutBox, SIGNAL(clicked()),this, SLOT(pushButtonCutBox_clicked()));
+    connect(ui->pushButtonPutSphere, SIGNAL(clicked()), this, SLOT(pushButtonPutSphere_clicked()));
+    connect(ui->pushButtonCutSphere, SIGNAL(clicked()), this, SLOT(pushButtonPutSphere_clicked()));
+    connect(ui->pushButtonPutEllip, SIGNAL(clicked()), this, SLOT(pushButtonPutEllip_clicked()));
+    connect(ui->pushButtonCutEllip, SIGNAL(clicked()), this, SLOT(pushButtonPutEllip_clicked()));
+
+
 
 }
 
@@ -45,7 +50,7 @@ void MainWindow::on_pushButtonDim_clicked()
     }
 }
 
-void MainWindow::on_pushButtonCutBox_clicked()
+void MainWindow::pushButtonCutBox_clicked()
 {
     boxDialog b;
     b.setModal(true);
@@ -73,14 +78,14 @@ void MainWindow::finaliza()
     close();
 }
 
-void MainWindow::on_pushButtonPutSphere_clicked()
+void MainWindow::pushButtonPutSphere_clicked()
 {
     SphereDialog s;
     s.setModal(true);
     s.exec();
 }
 
-void MainWindow::on_pushButtonPutEllip_clicked()
+void MainWindow::pushButtonPutEllip_clicked()
 {
     EllispoidDialog e;
     e.setModal(true);
