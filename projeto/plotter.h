@@ -9,7 +9,7 @@ class Plotter : public QWidget
     Q_OBJECT
 private:
     int x=10,y=10,z=10;
-    int plan=1;
+    int plan=0;
     int drawmodule=0;
 public:
    explicit Plotter(QWidget *parent= nullptr);
@@ -27,9 +27,6 @@ signals:
 public slots:
    void setdrawmodule(int);
    void setplan(int);
-//   void setX(int);
-//   void setY(int);
-//   void setZ(int);
 
 };
 

@@ -9,7 +9,6 @@ MainWindow::MainWindow(QWidget *parent) :
             SIGNAL(mouseX(int)),
             ui->lcdNumber,
             SLOT(display(int)));
-
     connect(ui->widget,
             SIGNAL(mouseY(int)),
             ui->lcdNumber_2,
@@ -18,6 +17,11 @@ MainWindow::MainWindow(QWidget *parent) :
             SIGNAL(on_pushButton_2_clicked()),
             ui->widget,
             SLOT(setdrawmodule(1)));
+    connect(ui->horizontalSliderZ,
+            SIGNAL(on_horizontalSliderZ_valueChanged(int)),
+            ui->widget,
+            SLOT(setplan())
+            );
    //QButtonGroup qbg(ui->pushButtonCutBox);
 }
 
@@ -73,4 +77,20 @@ void MainWindow::on_pushButton_2_clicked()
 {
     ui->widget->setdrawmodule(1);
 
+}
+
+void MainWindow::on_actionAbout_triggered()
+{
+    QMessageBox::information(this, tr("Sobre"),tr("\All of the icons utilized at this aplication is under creative commons 3.0!\n"));
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    ui->widget->setdrawmodule(2);
+}
+
+void MainWindow::on_horizontalSliderZ_valueChanged(int value)
+{
+    ui->widget->setplan(value);
+    repaint();
 }

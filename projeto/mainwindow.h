@@ -32,7 +32,15 @@ private slots:
 
     void on_pushButton_2_clicked();
 
-    private:
+    void on_actionAbout_triggered();
+
+    void on_pushButton_clicked();
+
+    void on_horizontalSliderZ_valueChanged(int value);
+
+   // void on_horizontalSliderZ_sliderMoved(int position);
+
+private:
     Ui::MainWindow *ui;
 };
 

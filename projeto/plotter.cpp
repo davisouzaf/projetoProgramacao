@@ -37,12 +37,13 @@ void Plotter::paintEvent(QPaintEvent *event)
     brush.setColor(selectedcolor);
     brush.setStyle(Qt::SolidPattern);
     painter.setBrush(brush);
-    int xc=width()/this->y;
-    int yc=width()/this->x;
+    float xc=(float)(height()/this->x);
+    float yc=(float)(width()/this->y);
     for (int i=0;i<x;i++) {
         for (int j=0;j<y;j++) {
             if(scpt->getisonplan(i,j,plan)==true){
-                qDebug()<<i<<j;
+                qDebug()<<i<<j<<plan;
+                //qDebug()<<i<<j;
                 //int xc=width()/this->y;
                 //int yc=height()/this->x;
                 //if(j==0){
@@ -50,7 +51,7 @@ void Plotter::paintEvent(QPaintEvent *event)
                 //}else{
                 painter.drawEllipse(xc*(i),yc*(j),xc,yc);
                 //}
-                qDebug()<<xc*(i-1)<<yc*(j-1);
+                //qDebug()<<xc*(i-1)<<yc*(j-1);
         }}
         }
     }
@@ -78,12 +79,12 @@ void Plotter::mousePressEvent(QMouseEvent *event)
 
 
     //qDebug()<<x<<y;
-    x=(x/clinha)+1;
-    y=(y/ccoluna)+1;
+    x=(float)(x/clinha)+1;
+    y=(float)(y/ccoluna)+1;
     emit mouseX(x);
     emit mouseY(y);
-    qDebug()<<clinha<<ccoluna;
-    qDebug()<<drawmodule;
+    //qDebug()<<clinha<<ccoluna;
+    //qDebug()<<drawmodule;
     //QPainter painter(this);
     //QBrush brush;
     if(drawmodule==1){
@@ -120,5 +121,6 @@ void Plotter::setdrawmodule(int dm)
 
 void Plotter::setplan(int p)
 {
-    plan=p;
+    plan=p-1;
+    //repaint();
 }
