@@ -7,9 +7,8 @@
 #include "dimdialog.h"
 #include "QColor"
 #include "boxdialog.h"
-#include "EllispoidDialog.h"
+#include "ellipsoiddialog.h"
 #include "QColorDialog"
-#include "spheredialog.h"
 
 namespace Ui {
 class MainWindow;
@@ -23,15 +22,17 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    void mudaCor();
 public slots:
     void on_pushButtonDim_clicked();
-    void pushButtonCutBox_clicked();
-    void on_ColorButton_clicked();
-    void finaliza();
-    void pushButtonPutSphere_clicked();
-    void pushButtonPutEllip_clicked();
+    void on_pushButtonCutBox_clicked();
 
-private:
+private slots:
+    void on_ColorButton_clicked();
+
+    void on_pushButton_2_clicked();
+
+    private:
     Ui::MainWindow *ui;
 };
 

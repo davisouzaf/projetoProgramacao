@@ -13,6 +13,7 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
+    Sculptor.cpp \
     boxdialog.cpp \
     ellispoiddialog.cpp \
         mainwindow.cpp \
@@ -25,6 +26,7 @@ HEADERS  += mainwindow.h \
     ellispoiddialog.h \
     plotter.h \
     dimdialog.h \
+    sculptor.h \
     spheredialog.h
 
 FORMS    += mainwindow.ui \

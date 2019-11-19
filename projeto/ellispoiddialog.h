@@ -14,9 +14,6 @@ class EllispoidDialog : public QDialog
 public:
     explicit EllispoidDialog(QWidget *parent = nullptr);
     ~EllispoidDialog();
-    int getRx();
-    int getRy();
-    int getRz();
 
 private:
     Ui::EllispoidDialog *ui;

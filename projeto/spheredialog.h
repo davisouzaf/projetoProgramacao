@@ -14,7 +14,6 @@ class SphereDialog : public QDialog
 public:
     explicit SphereDialog(QWidget *parent = nullptr);
     ~SphereDialog();
-    int getR();
 
 private:
     Ui::SphereDialog *ui;

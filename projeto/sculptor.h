@@ -111,6 +111,7 @@ public:
      * @param filename
      */
     void writeOFF(char *filename);
+    bool getisonplan(int i, int j, int k);
 };
 
 #endif // ESCULTOR_H

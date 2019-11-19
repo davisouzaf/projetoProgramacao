@@ -7,12 +7,13 @@
 #include <QDebug>
 
 Plotter::Plotter(QWidget *parent) : QWidget(parent){
-
+    scpt=new Sculptor(10,10,10);
 }
 
 void Plotter::paintEvent(QPaintEvent *event)
 {
 
+    //scpt->~Sculptor();
     QPainter painter(this);
     QPen pen;
     QBrush brush;
@@ -33,6 +34,33 @@ void Plotter::paintEvent(QPaintEvent *event)
         }
         auxy+=(float)(height()/this->x);
     }
+    brush.setColor(selectedcolor);
+    brush.setStyle(Qt::SolidPattern);
+    painter.setBrush(brush);
+    for (int i=0;i<x;i++) {
+        for (int j=0;j<y;j++) {
+            if(scpt->getisonplan(i,j,plan)==true){
+                qDebug()<<i<<j;
+                int xc=width()/this->y;
+                int yc=height()/this->x;
+                painter.drawEllipse(xc*(i-1),yc*(j-1),xc,yc);
+                qDebug()<<xc<<yc;
+            }
+        }
+    }
+
+//    if(drawmodule==1){
+//       // painter.brush(posicaox*largura/x;largura/x);
+//        qDebug()<<selectedcolor.red();
+//       // painter.brush(x*width()/x,width()/x,y*height()/y,height()/y);
+//        //repaint();
+//        painter.drawRect(x*width()/x,width()/x,y*height()/y,height()/y);
+//    }else if(drawmodule==2){
+//    }else {
+
+//    }
+
+
 }
 
 void Plotter::mousePressEvent(QMouseEvent *event)
@@ -44,12 +72,21 @@ void Plotter::mousePressEvent(QMouseEvent *event)
     int ccoluna=width()/this->y;
 
 
-    qDebug()<<x<<y;
+    //qDebug()<<x<<y;
     x=(x/clinha)+1;
     y=(y/ccoluna)+1;
     emit mouseX(x);
     emit mouseY(y);
     qDebug()<<clinha<<ccoluna;
+    qDebug()<<drawmodule;
+    repaint();
+    //QPainter painter(this);
+    //QBrush brush;
+    if(drawmodule==1){
+        scpt->setColor(1/selectedcolor.red(),1/selectedcolor.green(),1/selectedcolor.blue(),1);
+        scpt->putVoxel(x,y,plan);
+    }
+    repaint();
 }
 
 void Plotter::setX(int x){
@@ -64,4 +101,20 @@ void Plotter::setY(int y)
 void Plotter::setZ(int z)
 {
     this->z=z;
+}
+
+int Plotter::getdrawmodule()
+{
+    return drawmodule;
+}
+
+void Plotter::setdrawmodule(int dm)
+{
+    drawmodule=dm;
+    // repaint();
+}
+
+void Plotter::setplan(int p)
+{
+    plan=p;
 }

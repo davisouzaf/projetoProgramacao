@@ -3,8 +3,7 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
-{
+    ui(new Ui::MainWindow){
     ui->setupUi(this);
     connect(ui->widget,
             SIGNAL(mouseX(int)),
@@ -15,19 +14,11 @@ MainWindow::MainWindow(QWidget *parent) :
             SIGNAL(mouseY(int)),
             ui->lcdNumber_2,
             SLOT(display(int)));
-
-    connect(ui->actionExit, &QAction::triggered,
-            this, &MainWindow::finaliza);
-
-    connect(ui->pushButtonPutBox, SIGNAL(clicked()), this, SLOT(pushButtonCutBox_clicked()));
-    connect(ui->pushButtonCutBox, SIGNAL(clicked()),this, SLOT(pushButtonCutBox_clicked()));
-    connect(ui->pushButtonPutSphere, SIGNAL(clicked()), this, SLOT(pushButtonPutSphere_clicked()));
-    connect(ui->pushButtonCutSphere, SIGNAL(clicked()), this, SLOT(pushButtonPutSphere_clicked()));
-    connect(ui->pushButtonPutEllip, SIGNAL(clicked()), this, SLOT(pushButtonPutEllip_clicked()));
-    connect(ui->pushButtonCutEllip, SIGNAL(clicked()), this, SLOT(pushButtonPutEllip_clicked()));
-
-
-
+    connect(ui->pushButton_2,
+            SIGNAL(on_pushButton_2_clicked()),
+            ui->widget,
+            SLOT(setdrawmodule(1)));
+   //QButtonGroup qbg(ui->pushButtonCutBox);
 }
 
 MainWindow::~MainWindow()
@@ -44,13 +35,17 @@ void MainWindow::on_pushButtonDim_clicked()
     ui->widget->setY(d.getY());
     ui->widget->setZ(d.getZ());
     ui->horizontalSliderZ->setMaximum(d.getZ());
+    ui->widget->scpt->~Sculptor();
+    ui->widget->scpt=new Sculptor(d.getX(),d.getY(),d.getZ());
     repaint();
     }else if (d.getX()==0 || d.getY()==0 || d.getZ()==0) {
         QMessageBox::information(this, tr("Erro"),tr("\nvalores inválidos, tente outra vez!\n"));
+    }else {
+
     }
 }
 
-void MainWindow::pushButtonCutBox_clicked()
+void MainWindow::on_pushButtonCutBox_clicked()
 {
     boxDialog b;
     b.setModal(true);
@@ -69,25 +64,13 @@ void MainWindow::on_ColorButton_clicked()
         ui->verticalSlider->setValue(colorDialog.selectedColor().red());
         ui->verticalSlider_2->setValue(colorDialog.selectedColor().green());
         ui->verticalSlider_3->setValue(colorDialog.selectedColor().blue());
+        ui->widget->selectedcolor=colorDialog.selectedColor();
     //}
 
 }
 
-void MainWindow::finaliza()
+void MainWindow::on_pushButton_2_clicked()
 {
-    close();
-}
+    ui->widget->setdrawmodule(1);
 
-void MainWindow::pushButtonPutSphere_clicked()
-{
-    SphereDialog s;
-    s.setModal(true);
-    s.exec();
-}
-
-void MainWindow::pushButtonPutEllip_clicked()
-{
-    EllispoidDialog e;
-    e.setModal(true);
-    e.exec();
 }

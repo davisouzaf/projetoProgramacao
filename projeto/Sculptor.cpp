@@ -167,3 +167,12 @@ void Sculptor::writeOFF(char * filename){
     }
     fout.close();
 }
+
+bool Sculptor::getisonplan(int i, int j,int k)
+{
+    if(v[i][j][k].isOn){
+        return true;
+    }else {
+        return false;
+    }
+}

@@ -12,8 +12,3 @@ SphereDialog::~SphereDialog()
 {
     delete ui;
 }
-
-int SphereDialog::getR()
-{
-    return ui->horizontalSlider->value();
-}
