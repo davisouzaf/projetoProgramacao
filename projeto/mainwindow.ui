@@ -67,7 +67,7 @@
      <rect>
       <x>40</x>
       <y>0</y>
-      <width>747</width>
+      <width>758</width>
       <height>64</height>
      </rect>
     </property>
@@ -113,7 +113,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="cube.qrc">
+        <iconset>
          <normaloff>:/iconfinder_Rubics_Cube_toy_magic_cube_geek_3186861.svg</normaloff>:/iconfinder_Rubics_Cube_toy_magic_cube_geek_3186861.svg</iconset>
        </property>
        <property name="iconSize">
@@ -385,9 +385,7 @@
    </slots>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="cube.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>horizontalSliderZ</sender>

@@ -37,15 +37,21 @@ void Plotter::paintEvent(QPaintEvent *event)
     brush.setColor(selectedcolor);
     brush.setStyle(Qt::SolidPattern);
     painter.setBrush(brush);
+    int xc=width()/this->y;
+    int yc=width()/this->x;
     for (int i=0;i<x;i++) {
         for (int j=0;j<y;j++) {
             if(scpt->getisonplan(i,j,plan)==true){
                 qDebug()<<i<<j;
-                int xc=width()/this->y;
-                int yc=height()/this->x;
-                painter.drawEllipse(xc*(i-1),yc*(j-1),xc,yc);
-                qDebug()<<xc<<yc;
-            }
+                //int xc=width()/this->y;
+                //int yc=height()/this->x;
+                //if(j==0){
+                    //painter.drawEllipse(xc*(i-2),yc*(9),xc,yc);
+                //}else{
+                painter.drawEllipse(xc*(i),yc*(j),xc,yc);
+                //}
+                qDebug()<<xc*(i-1)<<yc*(j-1);
+        }}
         }
     }
 
@@ -61,7 +67,6 @@ void Plotter::paintEvent(QPaintEvent *event)
 //    }
 
 
-}
 
 void Plotter::mousePressEvent(QMouseEvent *event)
 {
@@ -79,12 +84,11 @@ void Plotter::mousePressEvent(QMouseEvent *event)
     emit mouseY(y);
     qDebug()<<clinha<<ccoluna;
     qDebug()<<drawmodule;
-    repaint();
     //QPainter painter(this);
     //QBrush brush;
     if(drawmodule==1){
-        scpt->setColor(1/selectedcolor.red(),1/selectedcolor.green(),1/selectedcolor.blue(),1);
-        scpt->putVoxel(x,y,plan);
+        scpt->setColor((float)1/selectedcolor.red(),(float)1/selectedcolor.green(),(float)1/selectedcolor.blue(),1);
+        scpt->putVoxel(x-1,y-1,plan);
     }
     repaint();
 }
