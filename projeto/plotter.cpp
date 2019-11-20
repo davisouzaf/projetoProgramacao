@@ -3,7 +3,7 @@
 #include <QPen>
 #include <QBrush>
 #include <QEvent>
-#include <QMouseEvent>
+//#include <QMouseEvent>
 #include <QDebug>
 #include "putvoxel.h"
 #include "cutvoxel.h"
@@ -86,6 +86,51 @@ void Plotter::paintEvent(QPaintEvent *event)
 }
 
 void Plotter::mousePressEvent(QMouseEvent *event)
+{
+    int x, y;
+    x=event->x();
+    y=event->y();
+    int clinha=height()/this->x;
+    int ccoluna=width()/this->y;
+    //qDebug()<<x<<y;
+    x=(float)(x/clinha)+1;
+    y=(float)(y/ccoluna)+1;
+    emit mouseX(x);
+    emit mouseY(y);
+    if(drawmodule==1){
+        //scpt->putVoxel(x-1,y-1,plan);
+        PutVoxel pv((float)selectedcolor.red()/255,(float)selectedcolor.green()/255,(float)selectedcolor.blue()/255,(float)selectedcolor.alpha()/255,x-1,y-1,plan);
+        pv.draw(*scpt);
+        //qDebug()<<selectedcolor.alpha();
+    }else if(drawmodule==2){
+        CutVoxel cv(x-1,y-1,plan);
+        cv.draw(*scpt);
+        //scpt->cutVoxel(x-1,y-1,plan);
+    }else if(drawmodule==3){
+        PutBox pb(x-1,x-1+boxwidth,y-1,y-1+boxheight,plan,plan+boxdepth,(float)selectedcolor.red()/255,(float)selectedcolor.green()/255,(float)selectedcolor.blue()/255,(float)selectedcolor.alpha()/255);
+        pb.draw(*scpt);
+    }else if (drawmodule==4) {
+        CutBox cb(x-1,x-1+boxwidth,y-1,y-1+boxheight,plan,plan+boxdepth);
+        cb.draw(*scpt);
+    }else if(drawmodule==5){//putsphere
+        PutSphere ps(x-1,y-1,plan,radius,(float)selectedcolor.red()/255,(float)selectedcolor.green()/255,(float)selectedcolor.blue()/255,(float)selectedcolor.alpha()/255);
+        ps.draw(*scpt);
+        //        scpt->setColor((float)selectedcolor.red()/255,(float)selectedcolor.green()/255,(float)selectedcolor.blue()/255,1.0);
+        //        scpt->putSphere(x-1,y-1,plan,radius);
+    }else if(drawmodule==6){//cutsphere
+        CutSphere cs(x-1,y-1,plan,radius);
+        cs.draw(*scpt);
+    }else if (drawmodule==7) {
+        PutEllipsoid pe(x-1,y-1,plan,xradius,yradius,zradius,(float)selectedcolor.red()/255,(float)selectedcolor.green()/255,(float)selectedcolor.blue()/255,(float)selectedcolor.alpha()/255);
+        pe.draw(*scpt);
+    }else if(drawmodule==8){
+        CutEllipsoid ce(x-1,y-1,plan,xradius,yradius,zradius);
+        ce.draw(*scpt);
+    }
+    repaint();
+}
+
+void Plotter::mouseMoveEvent(QMouseEvent *event)
 {
     int x, y;
     x=event->x();

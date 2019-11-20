@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QAction>
 #include <sculptor.h>
+#include <QMouseEvent>
 class Plotter : public QWidget
 {
     Q_OBJECT
@@ -18,6 +19,7 @@ public:
    explicit Plotter(QWidget *parent= nullptr);
    void paintEvent(QPaintEvent *event);
    void mousePressEvent(QMouseEvent *event);
+   void mouseMoveEvent(QMouseEvent *event);
    void setX(int);
    void setY(int);
    void setZ(int);
