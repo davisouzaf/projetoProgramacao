@@ -1,0 +1,10 @@
+<map id="FiguraGeometrica" name="FiguraGeometrica">
+<area shape="rect" id="node2" href="$class_cut_box.html" title="A classe CutBox apaga uma caixa no espaço. " alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="$class_cut_ellipsoid.html" title="A classe CutEllipsoid apaga um elipsoide no espaço. " alt="" coords="97,80,189,107"/>
+<area shape="rect" id="node4" href="$class_cut_sphere.html" title="A classe CutSphere apaga uma esfera no espaço. " alt="" coords="213,80,297,107"/>
+<area shape="rect" id="node5" href="$class_cut_voxel.html" title="A classe CutVoxel apaga um voxel na posição especificada. " alt="" coords="321,80,397,107"/>
+<area shape="rect" id="node6" href="$class_put_box.html" title="A classe PutBox implementa uma caixa no espaço. " alt="" coords="421,80,486,107"/>
+<area shape="rect" id="node7" href="$class_put_ellipsoid.html" title="A classe PutEllipsoid implementa um elipsoide no espaço. " alt="" coords="511,80,601,107"/>
+<area shape="rect" id="node8" href="$class_put_sphere.html" title="A classe PutSphere implementa uma esfera no espaço. " alt="" coords="625,80,708,107"/>
+<area shape="rect" id="node9" href="$class_put_voxel.html" title="A classe PutVoxel implementa um voxel no espaço. " alt="" coords="732,80,807,107"/>
+</map>
