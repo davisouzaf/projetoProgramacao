@@ -1,14 +1,29 @@
 #include "ellipsoiddialog.h"
-#include "ui_dialog.h"
+#include "ui_ellipsoiddialog.h"
 
-Dialog::Dialog(QWidget *parent) :
+EllipsoidDialog::EllipsoidDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::EllipsoidDialog)
 {
     ui->setupUi(this);
 }
 
-Dialog::~Dialog()
+int EllipsoidDialog::getXRadius()
+{
+    return ui->horizontalSlider->value();
+}
+
+int EllipsoidDialog::getYRadius()
+{
+    return ui->horizontalSlider_2->value();
+}
+
+int EllipsoidDialog::getZRadius()
+{
+    return ui->horizontalSlider_3->value();
+}
+
+EllipsoidDialog::~EllipsoidDialog()
 {
     delete ui;
 }

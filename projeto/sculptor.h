@@ -110,8 +110,12 @@ public:
      * @brief writeOFF grava a escultura no formato OFF no arquivo especificado
      * @param filename
      */
-    void writeOFF(char *filename);
+    void writeOFF(const char *filename);
     bool getisonplan(int i, int j, int k);
+    float getR(int,int,int);
+    float getG(int,int,int);
+    float getB(int,int,int);
+    float getA(int,int,int);
 };
 
 #endif // ESCULTOR_H

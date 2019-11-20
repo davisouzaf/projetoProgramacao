@@ -7,9 +7,12 @@
 #include "dimdialog.h"
 #include "QColor"
 #include "boxdialog.h"
-#include "ellipsoiddialog.h"
+#include "spheredialog.h"
 #include "QColorDialog"
-
+#include "QFileDialog"
+#include "cstring"
+#include "QString"
+#include "ellipsoiddialog.h"
 namespace Ui {
 class MainWindow;
 }
@@ -39,6 +42,20 @@ private slots:
     void on_horizontalSliderZ_valueChanged(int value);
 
    // void on_horizontalSliderZ_sliderMoved(int position);
+
+    void on_actionSave_File_triggered();
+
+    void on_actionView_solid_triggered();
+
+    void on_pushButtonPutSphere_clicked();
+
+    void on_pushButtonCurSphere_clicked();
+
+    void on_pushButtonPutBox_clicked();
+
+    void on_pushButtonPutEllip_clicked();
+
+    void on_pushButtonCutEllip_clicked();
 
 private:
     Ui::MainWindow *ui;

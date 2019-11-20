@@ -12,3 +12,8 @@ SphereDialog::~SphereDialog()
 {
     delete ui;
 }
+
+int SphereDialog::getRadius()
+{
+    return ui->horizontalSlider->value();
+}

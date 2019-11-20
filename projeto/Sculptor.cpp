@@ -117,7 +117,7 @@ void Sculptor::cutEllipsoid(int xc, int yc, int zc, int rx, int ry, int rz){
         }
     }
 }
-void Sculptor::writeOFF(char * filename){
+void Sculptor::writeOFF(const char * filename){
     ofstream fout;
     fout.open(filename);
     if(!fout.is_open()){
@@ -182,4 +182,24 @@ bool Sculptor::getisonplan(int i, int j,int k)
     }else {
         return false;
     }
+}
+
+float Sculptor::getR(int i, int j, int k)
+{
+    return v[i][j][k].r;
+}
+
+float Sculptor::getG(int i, int j, int k)
+{
+    return v[i][j][k].g;
+}
+
+float Sculptor::getB(int i, int j, int k)
+{
+    return v[i][j][k].b;
+}
+
+float Sculptor::getA(int i, int j, int k)
+{
+    return v[i][j][k].a;
 }

@@ -17,7 +17,7 @@
    <item row="0" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>Dim X:</string>
+      <string>Columns:</string>
      </property>
     </widget>
    </item>
@@ -34,7 +34,7 @@
    <item row="1" column="0">
     <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>Dim Y:</string>
+      <string>Lines:</string>
      </property>
     </widget>
    </item>
@@ -51,7 +51,7 @@
    <item row="2" column="0">
     <widget class="QLabel" name="label_3">
      <property name="text">
-      <string>Dim Z:</string>
+      <string>Plans:</string>
      </property>
     </widget>
    </item>
