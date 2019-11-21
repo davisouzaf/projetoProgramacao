@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>528</width>
-    <height>551</height>
+    <width>545</width>
+    <height>561</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
    <widget class="Plotter" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>90</y>
-      <width>361</width>
-      <height>361</height>
+      <x>10</x>
+      <y>80</y>
+      <width>341</width>
+      <height>341</height>
      </rect>
     </property>
    </widget>
@@ -32,7 +32,7 @@
      <rect>
       <x>0</x>
       <y>450</y>
-      <width>501</width>
+      <width>521</width>
       <height>46</height>
      </rect>
     </property>
@@ -67,7 +67,7 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>501</width>
+      <width>511</width>
       <height>64</height>
      </rect>
     </property>
@@ -230,7 +230,7 @@
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>410</x>
       <y>60</y>
       <width>107</width>
       <height>381</height>
@@ -376,7 +376,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>528</width>
+     <width>545</width>
      <height>22</height>
     </rect>
    </property>

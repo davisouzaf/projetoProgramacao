@@ -97,6 +97,7 @@ void MainWindow::on_horizontalSliderZ_valueChanged(int value)
 
 void MainWindow::on_actionSave_File_triggered(){
     QString qs=QFileDialog::getSaveFileName();
+    qs=qs+".off";
     qDebug()<<qs;
 
     ui->widget->scpt->writeOFF(qs.toStdString().c_str());
@@ -104,7 +105,12 @@ void MainWindow::on_actionSave_File_triggered(){
 
 void MainWindow::on_actionView_solid_triggered()
 {
-    system("geomview ");
+    QString qs=QFileDialog::getSaveFileName();
+    qs=qs+".off";
+    QString command="meshlab "+qs;
+    qDebug()<<command;
+    ui->widget->scpt->writeOFF(qs.toStdString().c_str());
+    system(command.toStdString().c_str());
 }
 
 void MainWindow::on_pushButtonPutSphere_clicked()
