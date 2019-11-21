@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>786</width>
-    <height>562</height>
+    <width>528</width>
+    <height>551</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
    <widget class="Plotter" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>331</width>
-      <height>341</height>
+      <x>0</x>
+      <y>90</y>
+      <width>361</width>
+      <height>361</height>
      </rect>
     </property>
    </widget>
@@ -32,14 +32,11 @@
      <rect>
       <x>0</x>
       <y>450</y>
-      <width>571</width>
+      <width>501</width>
       <height>46</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="2">
-      <widget class="QLCDNumber" name="lcdNumberZ"/>
-     </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label">
        <property name="text">
@@ -60,6 +57,9 @@
        </property>
       </widget>
      </item>
+     <item row="0" column="2">
+      <widget class="QLCDNumber" name="lcdNumberZ"/>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -67,7 +67,7 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>758</width>
+      <width>501</width>
       <height>64</height>
      </rect>
     </property>
@@ -75,35 +75,85 @@
      <item row="0" column="5">
       <widget class="QPushButton" name="pushButtonPutSphere">
        <property name="text">
-        <string>PutSphere</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="cube.qrc">
+         <normaloff>:/iconfinder_circle_293633.svg</normaloff>:/iconfinder_circle_293633.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
       <widget class="QPushButton" name="pushButtonDim">
        <property name="text">
-        <string>SetDim</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="cube.qrc">
+         <normaloff>:/iconfinder_essential_set_grid_1110970.svg</normaloff>:/iconfinder_essential_set_grid_1110970.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="0" column="2">
       <widget class="QPushButton" name="pushButton">
        <property name="text">
-        <string>CutVoxel</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="cube.qrc">
+         <normaloff>:/iconfinder_misc-_cube_1276871(1).svg</normaloff>:/iconfinder_misc-_cube_1276871(1).svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="0" column="6">
       <widget class="QPushButton" name="pushButtonCurSphere">
        <property name="text">
-        <string>CutSphere</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="cube.qrc">
+         <normaloff>:/iconfinder_check-circle-outline-blank_326565.svg</normaloff>:/iconfinder_check-circle-outline-blank_326565.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="0" column="7">
       <widget class="QPushButton" name="pushButtonPutEllip">
        <property name="text">
-        <string>PutEllipsoid</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="cube.qrc">
+         <normaloff>:/iconfinder_ellipse_82638.png</normaloff>:/iconfinder_ellipse_82638.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
        </property>
       </widget>
      </item>
@@ -127,184 +177,196 @@
      <item row="0" column="8">
       <widget class="QPushButton" name="pushButtonCutEllip">
        <property name="text">
-        <string>CutEllipsoid</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="cube.qrc">
+         <normaloff>:/iconfinder_Ellipse_131857.png</normaloff>:/iconfinder_Ellipse_131857.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="0" column="3">
       <widget class="QPushButton" name="pushButtonPutBox">
        <property name="text">
-        <string>PutBox</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="cube.qrc">
+         <normaloff>:/iconfinder_Rubics_Cube_toy_magic_cube_geek_3151562.svg</normaloff>:/iconfinder_Rubics_Cube_toy_magic_cube_geek_3151562.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
       <widget class="QPushButton" name="pushButton_2">
        <property name="text">
-        <string>PutVoxel</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="cube.qrc">
+         <normaloff>:/iconfinder_cube-block-box-shipping_2205214.svg</normaloff>:/iconfinder_cube-block-box-shipping_2205214.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
        </property>
       </widget>
      </item>
     </layout>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>400</x>
       <y>60</y>
-      <width>121</width>
-      <height>31</height>
+      <width>107</width>
+      <height>381</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Current Color</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>280</y>
-      <width>81</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <layout class="QVBoxLayout" name="verticalLayout_5">
      <item>
-      <widget class="QLabel" name="label_7">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
        <property name="text">
-        <string>Y</string>
+        <string>Current Color</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLCDNumber" name="lcdNumber_2"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>240</y>
-      <width>83</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
-     <item>
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string>X</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLCDNumber" name="lcdNumber">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>90</y>
-      <width>92</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
+        <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QSlider" name="verticalSlider">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="maximum">
-            <number>255</number>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QSlider" name="verticalSlider">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>R</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
          <item>
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>R</string>
-           </property>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QSlider" name="verticalSlider_2">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>G</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QSlider" name="verticalSlider_3">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>B</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </item>
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_2">
-         <item>
-          <widget class="QSlider" name="verticalSlider_2">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="maximum">
-            <number>255</number>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_3">
-           <property name="text">
-            <string>G</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QSlider" name="verticalSlider_3">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="maximum">
-            <number>255</number>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_4">
-           <property name="text">
-            <string>B</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QPushButton" name="ColorButton">
+         <property name="text">
+          <string>Select Color</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
      <item>
-      <widget class="QPushButton" name="ColorButton">
-       <property name="text">
-        <string>Select Color</string>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>X</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLCDNumber" name="lcdNumber">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Y</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLCDNumber" name="lcdNumber_2"/>
+       </item>
+      </layout>
      </item>
     </layout>
    </widget>
@@ -314,7 +376,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>786</width>
+     <width>528</width>
      <height>22</height>
     </rect>
    </property>

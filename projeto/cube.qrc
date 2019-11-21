@@ -1,5 +1,13 @@
 <RCC>
     <qresource prefix="/">
         <file>iconfinder_Rubics_Cube_toy_magic_cube_geek_3186861.svg</file>
+        <file>iconfinder_Rubics_Cube_toy_magic_cube_geek_3151562.svg</file>
+        <file>iconfinder_misc-_cube_1276871(1).svg</file>
+        <file>iconfinder_essential_set_grid_1110970.svg</file>
+        <file>iconfinder_cube-block-box-shipping_2205214.svg</file>
+        <file>iconfinder_circle_293633.svg</file>
+        <file>iconfinder_check-circle-outline-blank_326565.svg</file>
+        <file>iconfinder_Ellipse_131857.png</file>
+        <file>iconfinder_ellipse_82638.png</file>
     </qresource>
 </RCC>
