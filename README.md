@@ -1,6 +1,8 @@
 # Projeto Escultor 3D
 <h2>Projeto da disciplina de Programação Avançada</h2>
 <p>O projeto consiste na criação de uma ferramenta em C++ capaz de realizar esculturas em blocos representados por matrizes digitais, algo como a ideia usada pelo jogo <b>minecraft</b>.</p>
+<p>A interface visual permite a criação de esculturas tridimensionais a partir dos planos do escultor. O software permite a criação de figuras e o armazenamento em formato .off. A figura abaixo apresenta a tela inicial do programa, onde a grade quadriculada branca é onde o usuário poderá desenhar.</p>
+
 <h3>Classes criadas: </h3>
 <ul>
 <li><h4>Sculptor</h4></li>
