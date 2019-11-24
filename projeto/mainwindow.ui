@@ -227,7 +227,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -377,7 +377,7 @@
      <x>0</x>
      <y>0</y>
      <width>545</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -408,21 +408,37 @@
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionSave_File">
+   <property name="icon">
+    <iconset resource="cube.qrc">
+     <normaloff>:/iconfinder_floppy_285657.svg</normaloff>:/iconfinder_floppy_285657.svg</iconset>
+   </property>
    <property name="text">
     <string>Save File</string>
    </property>
   </action>
   <action name="actionView_solid">
+   <property name="icon">
+    <iconset resource="cube.qrc">
+     <normaloff>:/iconfinder_00-ELASTOFONT-STORE-READY_eye_2738306.svg</normaloff>:/iconfinder_00-ELASTOFONT-STORE-READY_eye_2738306.svg</iconset>
+   </property>
    <property name="text">
     <string>View solid</string>
    </property>
   </action>
   <action name="actionExit">
+   <property name="icon">
+    <iconset resource="cube.qrc">
+     <normaloff>:/iconfinder_common-logout-signout-exit-glyph_763291.svg</normaloff>:/iconfinder_common-logout-signout-exit-glyph_763291.svg</iconset>
+   </property>
    <property name="text">
     <string>Exit</string>
    </property>
   </action>
   <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="cube.qrc">
+     <normaloff>:/iconfinder_Information_27854.png</normaloff>:/iconfinder_Information_27854.png</iconset>
+   </property>
    <property name="text">
     <string>About</string>
    </property>

@@ -179,3 +179,8 @@ void MainWindow::on_pushButtonCutEllip_clicked()
         }
     }
 }
+
+void MainWindow::on_actionExit_triggered()
+{
+    close();
+}

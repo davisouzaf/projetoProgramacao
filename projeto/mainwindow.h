@@ -57,6 +57,8 @@ private slots:
 
     void on_pushButtonCutEllip_clicked();
 
+    void on_actionExit_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
