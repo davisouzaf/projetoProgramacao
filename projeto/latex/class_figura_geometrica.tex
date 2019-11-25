@@ -1,0 +1,140 @@
+\hypertarget{class_figura_geometrica}{}\section{Figura\+Geometrica Class Reference}
+\label{class_figura_geometrica}\index{Figura\+Geometrica@{Figura\+Geometrica}}
+
+
+A classe \hyperlink{class_figura_geometrica}{Figura\+Geometrica} serce como classe abstrata para criação de outras figuras.  
+
+
+
+
+{\ttfamily \#include $<$figurageometrica.\+h$>$}
+
+
+
+Inheritance diagram for Figura\+Geometrica\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_figura_geometrica__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_figura_geometrica_a81d7c7efaea511e60a15f5a363138dd9}{Figura\+Geometrica} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_figura_geometrica}{Figura\+Geometrica} é o contrutor da classe. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_figura_geometrica_a34585fd7c0bd7378fc69c4ee208e676c}{draw} (\hyperlink{class_sculptor}{Sculptor} \&t)=0
+\begin{DoxyCompactList}\small\item\em draw é um método que desenha a figura para o objeto \hyperlink{class_sculptor}{Sculptor} especificado \end{DoxyCompactList}\item 
+virtual \hyperlink{class_figura_geometrica_ad13b9bccf1b14f6b9fbc662aad61ffd1}{$\sim$\+Figura\+Geometrica} ()
+\begin{DoxyCompactList}\small\item\em $\sim$\+Figura\+Geometrica é o destrutor da classe \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_figura_geometrica_a0a4f57efb1a6c525c8aeee34c92e7eab}{r}
+\begin{DoxyCompactList}\small\item\em r\+: intensidade da cor vermelha \end{DoxyCompactList}\item 
+float \hyperlink{class_figura_geometrica_a51930549bcb90d016b824f10f95df355}{g}
+\begin{DoxyCompactList}\small\item\em g\+: intensidade da cor verde \end{DoxyCompactList}\item 
+float \hyperlink{class_figura_geometrica_a25e5d6c21410103c25ec55c0117dac0d}{b}
+\begin{DoxyCompactList}\small\item\em b\+: intensidade da cor azul \end{DoxyCompactList}\item 
+float \hyperlink{class_figura_geometrica_ae7c8a027fcec3c357265b90458a4d165}{a}
+\begin{DoxyCompactList}\small\item\em a\+: opacidade(alpha) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A classe \hyperlink{class_figura_geometrica}{Figura\+Geometrica} serce como classe abstrata para criação de outras figuras. 
+
+\hyperlink{class_figura_geometrica}{Figura\+Geometrica} permite que endereços de objetos de classes derivadas dela sejam armazenados em ponteiros dessa classe 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_figura_geometrica_a81d7c7efaea511e60a15f5a363138dd9}\label{class_figura_geometrica_a81d7c7efaea511e60a15f5a363138dd9}} 
+\index{Figura\+Geometrica@{Figura\+Geometrica}!Figura\+Geometrica@{Figura\+Geometrica}}
+\index{Figura\+Geometrica@{Figura\+Geometrica}!Figura\+Geometrica@{Figura\+Geometrica}}
+\subsubsection{\texorpdfstring{Figura\+Geometrica()}{FiguraGeometrica()}}
+{\footnotesize\ttfamily Figura\+Geometrica\+::\+Figura\+Geometrica (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_figura_geometrica}{Figura\+Geometrica} é o contrutor da classe. 
+
+\mbox{\Hypertarget{class_figura_geometrica_ad13b9bccf1b14f6b9fbc662aad61ffd1}\label{class_figura_geometrica_ad13b9bccf1b14f6b9fbc662aad61ffd1}} 
+\index{Figura\+Geometrica@{Figura\+Geometrica}!````~Figura\+Geometrica@{$\sim$\+Figura\+Geometrica}}
+\index{````~Figura\+Geometrica@{$\sim$\+Figura\+Geometrica}!Figura\+Geometrica@{Figura\+Geometrica}}
+\subsubsection{\texorpdfstring{$\sim$\+Figura\+Geometrica()}{~FiguraGeometrica()}}
+{\footnotesize\ttfamily Figura\+Geometrica\+::$\sim$\+Figura\+Geometrica (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$\sim$\+Figura\+Geometrica é o destrutor da classe 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_figura_geometrica_a34585fd7c0bd7378fc69c4ee208e676c}\label{class_figura_geometrica_a34585fd7c0bd7378fc69c4ee208e676c}} 
+\index{Figura\+Geometrica@{Figura\+Geometrica}!draw@{draw}}
+\index{draw@{draw}!Figura\+Geometrica@{Figura\+Geometrica}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Figura\+Geometrica\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_sculptor}{Sculptor} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+draw é um método que desenha a figura para o objeto \hyperlink{class_sculptor}{Sculptor} especificado 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_put_sphere_a5105d1e171563e16c148d8f715321b24}{Put\+Sphere}, \hyperlink{class_put_voxel_af784ab77d8a7aac2010e608796710ccb}{Put\+Voxel}, \hyperlink{class_put_ellipsoid_a961faff306dad93a4b68a35ad9c3027b}{Put\+Ellipsoid}, \hyperlink{class_put_box_a3caaf01d035f5a0749fd308e9a86de94}{Put\+Box}, \hyperlink{class_cut_ellipsoid_a7110c3cd9dc76bd09ec259b429a3e532}{Cut\+Ellipsoid}, \hyperlink{class_cut_box_a01216b04bf5a2d01ce1fb89f3fa62a46}{Cut\+Box}, \hyperlink{class_cut_sphere_ad62239c047f0817ba6fd4b85ae2eae42}{Cut\+Sphere}, and \hyperlink{class_cut_voxel_a4619616e021723dccaf5c7cf12164e01}{Cut\+Voxel}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_figura_geometrica_ae7c8a027fcec3c357265b90458a4d165}\label{class_figura_geometrica_ae7c8a027fcec3c357265b90458a4d165}} 
+\index{Figura\+Geometrica@{Figura\+Geometrica}!a@{a}}
+\index{a@{a}!Figura\+Geometrica@{Figura\+Geometrica}}
+\subsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily float Figura\+Geometrica\+::a\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+a\+: opacidade(alpha) 
+
+\mbox{\Hypertarget{class_figura_geometrica_a25e5d6c21410103c25ec55c0117dac0d}\label{class_figura_geometrica_a25e5d6c21410103c25ec55c0117dac0d}} 
+\index{Figura\+Geometrica@{Figura\+Geometrica}!b@{b}}
+\index{b@{b}!Figura\+Geometrica@{Figura\+Geometrica}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily float Figura\+Geometrica\+::b\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+b\+: intensidade da cor azul 
+
+\mbox{\Hypertarget{class_figura_geometrica_a51930549bcb90d016b824f10f95df355}\label{class_figura_geometrica_a51930549bcb90d016b824f10f95df355}} 
+\index{Figura\+Geometrica@{Figura\+Geometrica}!g@{g}}
+\index{g@{g}!Figura\+Geometrica@{Figura\+Geometrica}}
+\subsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily float Figura\+Geometrica\+::g\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+g\+: intensidade da cor verde 
+
+\mbox{\Hypertarget{class_figura_geometrica_a0a4f57efb1a6c525c8aeee34c92e7eab}\label{class_figura_geometrica_a0a4f57efb1a6c525c8aeee34c92e7eab}} 
+\index{Figura\+Geometrica@{Figura\+Geometrica}!r@{r}}
+\index{r@{r}!Figura\+Geometrica@{Figura\+Geometrica}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily float Figura\+Geometrica\+::r\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+r\+: intensidade da cor vermelha 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{figurageometrica_8h}{figurageometrica.\+h}\item 
+\hyperlink{figurageometrica_8cpp}{figurageometrica.\+cpp}\end{DoxyCompactItemize}

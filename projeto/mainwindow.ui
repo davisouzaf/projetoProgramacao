@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>545</width>
-    <height>561</height>
+    <width>525</width>
+    <height>659</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,47 +20,12 @@
    <widget class="Plotter" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>80</y>
+      <x>90</x>
+      <y>70</y>
       <width>341</width>
       <height>341</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>450</y>
-      <width>521</width>
-      <height>46</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Plano Z:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QSlider" name="horizontalSliderZ">
-       <property name="minimum">
-        <number>1</number>
-       </property>
-       <property name="maximum">
-        <number>10</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QLCDNumber" name="lcdNumberZ"/>
-     </item>
-    </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
@@ -227,47 +192,102 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>60</y>
-      <width>107</width>
-      <height>381</height>
+      <x>3</x>
+      <y>423</y>
+      <width>441</width>
+      <height>137</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_5">
      <item>
-      <widget class="QLabel" name="label_5">
-       <property name="font">
-        <font>
-         <pointsize>13</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Current Color</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_4">
+      <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="20,0,0">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="2">
+          <widget class="QLCDNumber" name="lcdNumberZ"/>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Plano Z:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSlider" name="horizontalSliderZ">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>10</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_3">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
            <item>
-            <widget class="QSlider" name="verticalSlider">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>X</string>
              </property>
             </widget>
            </item>
+           <item>
+            <widget class="QLCDNumber" name="lcdNumber">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Y</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLCDNumber" name="lcdNumber_2"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="20,0,0">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
            <item>
             <widget class="QLabel" name="label_2">
              <property name="text">
@@ -275,44 +295,10 @@
              </property>
             </widget>
            </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_2">
-           <item>
-            <widget class="QSlider" name="verticalSlider_2">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-            </widget>
-           </item>
            <item>
             <widget class="QLabel" name="label_3">
              <property name="text">
               <string>G</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout">
-           <item>
-            <widget class="QSlider" name="verticalSlider_3">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="maximum">
-              <number>255</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
              </property>
             </widget>
            </item>
@@ -325,46 +311,86 @@
            </item>
           </layout>
          </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QSlider" name="horizontalSliderR">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSlider" name="horizontalSliderG">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSlider" name="horizontalSliderB">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
         </layout>
        </item>
        <item>
-        <widget class="QPushButton" name="ColorButton">
-         <property name="text">
-          <string>Select Color</string>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
          </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="QLabel" name="label_6">
-         <property name="text">
-          <string>X</string>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
          </property>
-        </widget>
+        </spacer>
        </item>
        <item>
-        <widget class="QLCDNumber" name="lcdNumber">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QLabel" name="label_7">
-         <property name="text">
-          <string>Y</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_2"/>
+        <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,90">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Current Color</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ColorButton">
+           <property name="text">
+            <string>Select Color</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
@@ -376,8 +402,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>545</width>
-     <height>21</height>
+     <width>525</width>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -408,37 +434,21 @@
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionSave_File">
-   <property name="icon">
-    <iconset resource="cube.qrc">
-     <normaloff>:/iconfinder_floppy_285657.svg</normaloff>:/iconfinder_floppy_285657.svg</iconset>
-   </property>
    <property name="text">
     <string>Save File</string>
    </property>
   </action>
   <action name="actionView_solid">
-   <property name="icon">
-    <iconset resource="cube.qrc">
-     <normaloff>:/iconfinder_00-ELASTOFONT-STORE-READY_eye_2738306.svg</normaloff>:/iconfinder_00-ELASTOFONT-STORE-READY_eye_2738306.svg</iconset>
-   </property>
    <property name="text">
     <string>View solid</string>
    </property>
   </action>
   <action name="actionExit">
-   <property name="icon">
-    <iconset resource="cube.qrc">
-     <normaloff>:/iconfinder_common-logout-signout-exit-glyph_763291.svg</normaloff>:/iconfinder_common-logout-signout-exit-glyph_763291.svg</iconset>
-   </property>
    <property name="text">
     <string>Exit</string>
    </property>
   </action>
   <action name="actionAbout">
-   <property name="icon">
-    <iconset resource="cube.qrc">
-     <normaloff>:/iconfinder_Information_27854.png</normaloff>:/iconfinder_Information_27854.png</iconset>
-   </property>
    <property name="text">
     <string>About</string>
    </property>
@@ -468,12 +478,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>446</x>
-     <y>438</y>
+     <x>330</x>
+     <y>469</y>
     </hint>
     <hint type="destinationlabel">
-     <x>589</x>
-     <y>442</y>
+     <x>400</x>
+     <y>465</y>
     </hint>
    </hints>
   </connection>
@@ -484,8 +494,8 @@
    <slot>setplan()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>182</x>
-     <y>435</y>
+     <x>247</x>
+     <y>469</y>
     </hint>
     <hint type="destinationlabel">
      <x>154</x>

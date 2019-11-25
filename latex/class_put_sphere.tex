@@ -1,0 +1,108 @@
+\hypertarget{class_put_sphere}{}\section{Put\+Sphere Class Reference}
+\label{class_put_sphere}\index{Put\+Sphere@{Put\+Sphere}}
+
+
+A classe \hyperlink{class_put_sphere}{Put\+Sphere} implementa uma esfera no espaço.  
+
+
+
+
+{\ttfamily \#include $<$putsphere.\+h$>$}
+
+
+
+Inheritance diagram for Put\+Sphere\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_put_sphere__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Put\+Sphere\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_put_sphere__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_put_sphere_a0b70b6e3dba80000008282f38416537c}{Put\+Sphere} (int x, int y, int z, int raio, float \hyperlink{class_figura_geometrica_a0a4f57efb1a6c525c8aeee34c92e7eab}{r}, float \hyperlink{class_figura_geometrica_a51930549bcb90d016b824f10f95df355}{g}, float \hyperlink{class_figura_geometrica_a25e5d6c21410103c25ec55c0117dac0d}{b}, float \hyperlink{class_figura_geometrica_ae7c8a027fcec3c357265b90458a4d165}{a})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_put_sphere}{Put\+Sphere} é o construtor da classe, que recebe como parâmetros as coordenadas do centro da esfera(x,y,z) o tamanho do raio(r) e os parâmetro de cor(r,g,b,a) \end{DoxyCompactList}\item 
+void \hyperlink{class_put_sphere_a5105d1e171563e16c148d8f715321b24}{draw} (\hyperlink{class_sculptor}{Sculptor} \&t)
+\begin{DoxyCompactList}\small\item\em draw desenha uma esfera para o objeto de tipo \hyperlink{class_sculptor}{Sculptor} especificado \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A classe \hyperlink{class_put_sphere}{Put\+Sphere} implementa uma esfera no espaço. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_put_sphere_a0b70b6e3dba80000008282f38416537c}\label{class_put_sphere_a0b70b6e3dba80000008282f38416537c}} 
+\index{Put\+Sphere@{Put\+Sphere}!Put\+Sphere@{Put\+Sphere}}
+\index{Put\+Sphere@{Put\+Sphere}!Put\+Sphere@{Put\+Sphere}}
+\subsubsection{\texorpdfstring{Put\+Sphere()}{PutSphere()}}
+{\footnotesize\ttfamily Put\+Sphere\+::\+Put\+Sphere (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z,  }\item[{int}]{raio,  }\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_put_sphere}{Put\+Sphere} é o construtor da classe, que recebe como parâmetros as coordenadas do centro da esfera(x,y,z) o tamanho do raio(r) e os parâmetro de cor(r,g,b,a) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+{\em raio} & \\
+\hline
+{\em r} & \\
+\hline
+{\em g} & \\
+\hline
+{\em b} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+Exemplo de utilização de \hyperlink{class_put_sphere}{Put\+Sphere}\+: A esfera é definida como\+: \[ (X-xc)²+(Y-yc)²+(Z-zc)²=r²\]
+
+
+\begin{DoxyPre}
+\hyperlink{class_put_sphere}{PutSphere} ps(3,3,3,5,1,1,1,1)// esfera centrada em (3,3,3) de raio 5 e cor branca(1,1,1) totalmente opaca(1)
+\end{DoxyPre}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_put_sphere_a5105d1e171563e16c148d8f715321b24}\label{class_put_sphere_a5105d1e171563e16c148d8f715321b24}} 
+\index{Put\+Sphere@{Put\+Sphere}!draw@{draw}}
+\index{draw@{draw}!Put\+Sphere@{Put\+Sphere}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Sphere\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_sculptor}{Sculptor} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw desenha uma esfera para o objeto de tipo \hyperlink{class_sculptor}{Sculptor} especificado 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_figura_geometrica_a34585fd7c0bd7378fc69c4ee208e676c}{Figura\+Geometrica}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{putsphere_8h}{putsphere.\+h}\item 
+\hyperlink{putsphere_8cpp}{putsphere.\+cpp}\end{DoxyCompactItemize}

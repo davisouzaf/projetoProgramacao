@@ -1,0 +1,221 @@
+\hypertarget{class_plotter}{}\section{Plotter Class Reference}
+\label{class_plotter}\index{Plotter@{Plotter}}
+
+
+{\ttfamily \#include $<$plotter.\+h$>$}
+
+
+
+Inheritance diagram for Plotter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{class_plotter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Plotter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_plotter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_plotter_a6f80702bdfaef06fc3c127bcf2e92b45}{setdrawmodule} (int)
+\item 
+void \hyperlink{class_plotter_aa2706e1b6da1cdde9c5dcfcf001215c1}{setplan} (int)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_plotter_acc318f23eb9f135d13431c05221e1ee9}{mouseX} (int)
+\item 
+void \hyperlink{class_plotter_ae66c4db3fec253319af537aa627d8f1b}{mouseY} (int)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_plotter_a1807627530de30ae58dff3c42a823497}{Plotter} (Q\+Widget $\ast$parent=nullptr)
+\item 
+void \hyperlink{class_plotter_a06477bf987646f000a8982db1352a11d}{paint\+Event} (Q\+Paint\+Event $\ast$event)
+\item 
+void \hyperlink{class_plotter_aac8dfc9c49d06ccf085973ceec6eb50c}{mouse\+Press\+Event} (Q\+Mouse\+Event $\ast$event)
+\item 
+void \hyperlink{class_plotter_aedd6ee525b4cacb6bcbc7540ed1ef3e9}{mouse\+Move\+Event} (Q\+Mouse\+Event $\ast$event)
+\item 
+void \hyperlink{class_plotter_a57dcb319c1d0ce82bc45d3dba2ece38e}{setX} (int)
+\item 
+void \hyperlink{class_plotter_a586a5dc38bee3fdd3d89889f3c322fbc}{setY} (int)
+\item 
+void \hyperlink{class_plotter_af71ca471de0dbf45efd7467662a74bb6}{setZ} (int)
+\item 
+void \hyperlink{class_plotter_a7f39ba0215921d27437d96d56935429a}{set\+Radius} (int)
+\item 
+void \hyperlink{class_plotter_abd1810ebfbc5f3632fb3ad2fbeb28eb4}{set\+X\+Radius} (int)
+\item 
+void \hyperlink{class_plotter_aedf70b23a2128f7438500f9abfe9a88c}{set\+Y\+Radius} (int)
+\item 
+void \hyperlink{class_plotter_ab1ff5f4a6357b1b8bd51edede9932ad7}{set\+Z\+Radius} (int)
+\item 
+int \hyperlink{class_plotter_af2eefeff5343cde84639f54612b73338}{getdrawmodule} ()
+\item 
+void \hyperlink{class_plotter_aa599dcb990c94c5effa199d2696f3fba}{set\+Boxdepth} (int value)
+\item 
+void \hyperlink{class_plotter_a67bab31d1a00f883236ebb26df33a229}{set\+Boxheight} (int value)
+\item 
+void \hyperlink{class_plotter_a8c1b140601370f63bf0bcb0255979bd9}{set\+Boxwidth} (int value)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Color \hyperlink{class_plotter_afc5f742a96002ed3c018b006749bd2cf}{selectedcolor} =Q\+Color(255,255,255,255)
+\item 
+\hyperlink{class_sculptor}{Sculptor} $\ast$ \hyperlink{class_plotter_a314b26fc750a9a2fc37ac7a82b5cece6}{scpt}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_plotter_a1807627530de30ae58dff3c42a823497}\label{class_plotter_a1807627530de30ae58dff3c42a823497}} 
+\index{Plotter@{Plotter}!Plotter@{Plotter}}
+\index{Plotter@{Plotter}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{Plotter()}{Plotter()}}
+{\footnotesize\ttfamily Plotter\+::\+Plotter (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_plotter_af2eefeff5343cde84639f54612b73338}\label{class_plotter_af2eefeff5343cde84639f54612b73338}} 
+\index{Plotter@{Plotter}!getdrawmodule@{getdrawmodule}}
+\index{getdrawmodule@{getdrawmodule}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{getdrawmodule()}{getdrawmodule()}}
+{\footnotesize\ttfamily int Plotter\+::getdrawmodule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_aedd6ee525b4cacb6bcbc7540ed1ef3e9}\label{class_plotter_aedd6ee525b4cacb6bcbc7540ed1ef3e9}} 
+\index{Plotter@{Plotter}!mouse\+Move\+Event@{mouse\+Move\+Event}}
+\index{mouse\+Move\+Event@{mouse\+Move\+Event}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{mouse\+Move\+Event()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily void Plotter\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_aac8dfc9c49d06ccf085973ceec6eb50c}\label{class_plotter_aac8dfc9c49d06ccf085973ceec6eb50c}} 
+\index{Plotter@{Plotter}!mouse\+Press\+Event@{mouse\+Press\+Event}}
+\index{mouse\+Press\+Event@{mouse\+Press\+Event}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{mouse\+Press\+Event()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Plotter\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_acc318f23eb9f135d13431c05221e1ee9}\label{class_plotter_acc318f23eb9f135d13431c05221e1ee9}} 
+\index{Plotter@{Plotter}!mouseX@{mouseX}}
+\index{mouseX@{mouseX}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{mouseX}{mouseX}}
+{\footnotesize\ttfamily void Plotter\+::mouseX (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_plotter_ae66c4db3fec253319af537aa627d8f1b}\label{class_plotter_ae66c4db3fec253319af537aa627d8f1b}} 
+\index{Plotter@{Plotter}!mouseY@{mouseY}}
+\index{mouseY@{mouseY}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{mouseY}{mouseY}}
+{\footnotesize\ttfamily void Plotter\+::mouseY (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_plotter_a06477bf987646f000a8982db1352a11d}\label{class_plotter_a06477bf987646f000a8982db1352a11d}} 
+\index{Plotter@{Plotter}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{paint\+Event()}{paintEvent()}}
+{\footnotesize\ttfamily void Plotter\+::paint\+Event (\begin{DoxyParamCaption}\item[{Q\+Paint\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_aa599dcb990c94c5effa199d2696f3fba}\label{class_plotter_aa599dcb990c94c5effa199d2696f3fba}} 
+\index{Plotter@{Plotter}!set\+Boxdepth@{set\+Boxdepth}}
+\index{set\+Boxdepth@{set\+Boxdepth}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{set\+Boxdepth()}{setBoxdepth()}}
+{\footnotesize\ttfamily void Plotter\+::set\+Boxdepth (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_a67bab31d1a00f883236ebb26df33a229}\label{class_plotter_a67bab31d1a00f883236ebb26df33a229}} 
+\index{Plotter@{Plotter}!set\+Boxheight@{set\+Boxheight}}
+\index{set\+Boxheight@{set\+Boxheight}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{set\+Boxheight()}{setBoxheight()}}
+{\footnotesize\ttfamily void Plotter\+::set\+Boxheight (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_a8c1b140601370f63bf0bcb0255979bd9}\label{class_plotter_a8c1b140601370f63bf0bcb0255979bd9}} 
+\index{Plotter@{Plotter}!set\+Boxwidth@{set\+Boxwidth}}
+\index{set\+Boxwidth@{set\+Boxwidth}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{set\+Boxwidth()}{setBoxwidth()}}
+{\footnotesize\ttfamily void Plotter\+::set\+Boxwidth (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_a6f80702bdfaef06fc3c127bcf2e92b45}\label{class_plotter_a6f80702bdfaef06fc3c127bcf2e92b45}} 
+\index{Plotter@{Plotter}!setdrawmodule@{setdrawmodule}}
+\index{setdrawmodule@{setdrawmodule}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{setdrawmodule}{setdrawmodule}}
+{\footnotesize\ttfamily void Plotter\+::setdrawmodule (\begin{DoxyParamCaption}\item[{int}]{dm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_plotter_aa2706e1b6da1cdde9c5dcfcf001215c1}\label{class_plotter_aa2706e1b6da1cdde9c5dcfcf001215c1}} 
+\index{Plotter@{Plotter}!setplan@{setplan}}
+\index{setplan@{setplan}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{setplan}{setplan}}
+{\footnotesize\ttfamily void Plotter\+::setplan (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_plotter_a7f39ba0215921d27437d96d56935429a}\label{class_plotter_a7f39ba0215921d27437d96d56935429a}} 
+\index{Plotter@{Plotter}!set\+Radius@{set\+Radius}}
+\index{set\+Radius@{set\+Radius}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{set\+Radius()}{setRadius()}}
+{\footnotesize\ttfamily void Plotter\+::set\+Radius (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_a57dcb319c1d0ce82bc45d3dba2ece38e}\label{class_plotter_a57dcb319c1d0ce82bc45d3dba2ece38e}} 
+\index{Plotter@{Plotter}!setX@{setX}}
+\index{setX@{setX}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{set\+X()}{setX()}}
+{\footnotesize\ttfamily void Plotter\+::setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_abd1810ebfbc5f3632fb3ad2fbeb28eb4}\label{class_plotter_abd1810ebfbc5f3632fb3ad2fbeb28eb4}} 
+\index{Plotter@{Plotter}!set\+X\+Radius@{set\+X\+Radius}}
+\index{set\+X\+Radius@{set\+X\+Radius}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{set\+X\+Radius()}{setXRadius()}}
+{\footnotesize\ttfamily void Plotter\+::set\+X\+Radius (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_a586a5dc38bee3fdd3d89889f3c322fbc}\label{class_plotter_a586a5dc38bee3fdd3d89889f3c322fbc}} 
+\index{Plotter@{Plotter}!setY@{setY}}
+\index{setY@{setY}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{set\+Y()}{setY()}}
+{\footnotesize\ttfamily void Plotter\+::setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_aedf70b23a2128f7438500f9abfe9a88c}\label{class_plotter_aedf70b23a2128f7438500f9abfe9a88c}} 
+\index{Plotter@{Plotter}!set\+Y\+Radius@{set\+Y\+Radius}}
+\index{set\+Y\+Radius@{set\+Y\+Radius}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{set\+Y\+Radius()}{setYRadius()}}
+{\footnotesize\ttfamily void Plotter\+::set\+Y\+Radius (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_af71ca471de0dbf45efd7467662a74bb6}\label{class_plotter_af71ca471de0dbf45efd7467662a74bb6}} 
+\index{Plotter@{Plotter}!setZ@{setZ}}
+\index{setZ@{setZ}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{set\+Z()}{setZ()}}
+{\footnotesize\ttfamily void Plotter\+::setZ (\begin{DoxyParamCaption}\item[{int}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plotter_ab1ff5f4a6357b1b8bd51edede9932ad7}\label{class_plotter_ab1ff5f4a6357b1b8bd51edede9932ad7}} 
+\index{Plotter@{Plotter}!set\+Z\+Radius@{set\+Z\+Radius}}
+\index{set\+Z\+Radius@{set\+Z\+Radius}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{set\+Z\+Radius()}{setZRadius()}}
+{\footnotesize\ttfamily void Plotter\+::set\+Z\+Radius (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_plotter_a314b26fc750a9a2fc37ac7a82b5cece6}\label{class_plotter_a314b26fc750a9a2fc37ac7a82b5cece6}} 
+\index{Plotter@{Plotter}!scpt@{scpt}}
+\index{scpt@{scpt}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{scpt}{scpt}}
+{\footnotesize\ttfamily \hyperlink{class_sculptor}{Sculptor}$\ast$ Plotter\+::scpt}
+
+\mbox{\Hypertarget{class_plotter_afc5f742a96002ed3c018b006749bd2cf}\label{class_plotter_afc5f742a96002ed3c018b006749bd2cf}} 
+\index{Plotter@{Plotter}!selectedcolor@{selectedcolor}}
+\index{selectedcolor@{selectedcolor}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{selectedcolor}{selectedcolor}}
+{\footnotesize\ttfamily Q\+Color Plotter\+::selectedcolor =Q\+Color(255,255,255,255)}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{plotter_8h}{plotter.\+h}\item 
+\hyperlink{plotter_8cpp}{plotter.\+cpp}\end{DoxyCompactItemize}

@@ -65,9 +65,9 @@ void MainWindow::on_ColorButton_clicked()
     QPalette palette = ui->label_5->palette();
     palette.setColor(ui->label_5->foregroundRole(), colorDialog.selectedColor());
     ui->label_5->setPalette(palette);
-    ui->verticalSlider->setValue(colorDialog.selectedColor().red());
-    ui->verticalSlider_2->setValue(colorDialog.selectedColor().green());
-    ui->verticalSlider_3->setValue(colorDialog.selectedColor().blue());
+    ui->horizontalSliderR->setValue(colorDialog.selectedColor().red());
+    ui->horizontalSliderG->setValue(colorDialog.selectedColor().green());
+    ui->horizontalSliderB->setValue(colorDialog.selectedColor().blue());
     ui->widget->selectedcolor=colorDialog.selectedColor();
     //}
 
@@ -178,9 +178,4 @@ void MainWindow::on_pushButtonCutEllip_clicked()
             QMessageBox::information(this, tr("Erro"),tr("\nvalores inválidos, tente outra vez!\n"));
         }
     }
-}
-
-void MainWindow::on_actionExit_triggered()
-{
-    close();
 }

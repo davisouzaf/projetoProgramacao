@@ -1,0 +1,338 @@
+\hypertarget{class_sculptor}{}\section{Sculptor Class Reference}
+\label{class_sculptor}\index{Sculptor@{Sculptor}}
+
+
+A classe \hyperlink{class_sculptor}{Sculptor} define o espaço em que os voxels estarão alocados(como se fosse uma \char`\"{}prancheta\char`\"{} de desenho)  
+
+
+
+
+{\ttfamily \#include $<$sculptor.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sculptor_a014e3ef5517bf0e9d9e14486b6ac6433}{Sculptor} (int \+\_\+nx, int \+\_\+ny, int \+\_\+nz)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_sculptor}{Sculptor} é o construtor que recebe como parâmetros os comprimentos em relação aos eixos cartesianos(x,y,z) \end{DoxyCompactList}\item 
+\hyperlink{class_sculptor_a8f159bf97458326f16d2e238e11be7ff}{$\sim$\+Sculptor} ()
+\begin{DoxyCompactList}\small\item\em $\sim$\+Sculptor é o destrutor da classe \end{DoxyCompactList}\item 
+void \hyperlink{class_sculptor_af1d69da01379874b0dfd6454787cb562}{set\+Color} (float r, float g, float b, float alpha)
+\begin{DoxyCompactList}\small\item\em set\+Color altera a cor selecionada. \end{DoxyCompactList}\item 
+void \hyperlink{class_sculptor_a4bdea3048b419d58e93074060eaa7b52}{put\+Voxel} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em put\+Voxel Insere um voxel no espaço \end{DoxyCompactList}\item 
+void \hyperlink{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c}{cut\+Voxel} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em cut\+Voxel Apaga um voxel no espaço \end{DoxyCompactList}\item 
+void \hyperlink{class_sculptor_a311ad7a0fb83fc67ac1f378be8e99fe1}{put\+Box} (int x0, int x1, int y0, int y1, int z0, int z1)
+\begin{DoxyCompactList}\small\item\em put\+Box Insere uma caixa no espaço \end{DoxyCompactList}\item 
+void \hyperlink{class_sculptor_aa84a1b12b09e9e103fc8d78f8d1bc00f}{cut\+Box} (int x0, int x1, int y0, int y1, int z0, int z1)
+\begin{DoxyCompactList}\small\item\em cut\+Box apaga uma caixa do espaço \end{DoxyCompactList}\item 
+void \hyperlink{class_sculptor_a7ad429e4c9bee30af79485b97a67885f}{put\+Sphere} (int xc, int yc, int zc, int raio)
+\begin{DoxyCompactList}\small\item\em put\+Sphere implementa uma esfera no espaço \end{DoxyCompactList}\item 
+void \hyperlink{class_sculptor_a7fc1bd095f9f1019d1619673905f6cdc}{cut\+Sphere} (int xc, int yc, int zc, int raio)
+\begin{DoxyCompactList}\small\item\em cut\+Sphere apaga uma esfera no espaço \end{DoxyCompactList}\item 
+void \hyperlink{class_sculptor_aab6773c379cee65ef0e93de25079a23d}{put\+Ellipsoid} (int xc, int yc, int zc, int rx, int ry, int rz)
+\begin{DoxyCompactList}\small\item\em put\+Ellipsoid implementa um elipsoide no espaço \end{DoxyCompactList}\item 
+void \hyperlink{class_sculptor_a84b3495724695476daa2e9b83df7cb03}{cut\+Ellipsoid} (int xc, int yc, int zc, int rx, int ry, int rz)
+\begin{DoxyCompactList}\small\item\em cut\+Ellipsoid apaga um elipsoide no espaço \end{DoxyCompactList}\item 
+void \hyperlink{class_sculptor_a58cb72d22001a5034f15383ca983830c}{write\+O\+FF} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em write\+O\+FF grava a escultura no formato O\+FF no arquivo especificado \end{DoxyCompactList}\item 
+bool \hyperlink{class_sculptor_ad7793360e2d6a11c4799b50e3cfaf017}{getisonplan} (int i, int j, int k)
+\item 
+float \hyperlink{class_sculptor_a6ddea4b268d77d46085313a09746176b}{getR} (int, int, int)
+\item 
+float \hyperlink{class_sculptor_a82bade484b1942db03407888b0821791}{getG} (int, int, int)
+\item 
+float \hyperlink{class_sculptor_a101cab6fc879fd4eb756aaa90043805c}{getB} (int, int, int)
+\item 
+float \hyperlink{class_sculptor_aad4a793c55c48526fb0db2b14a6042cc}{getA} (int, int, int)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A classe \hyperlink{class_sculptor}{Sculptor} define o espaço em que os voxels estarão alocados(como se fosse uma \char`\"{}prancheta\char`\"{} de desenho) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sculptor_a014e3ef5517bf0e9d9e14486b6ac6433}\label{class_sculptor_a014e3ef5517bf0e9d9e14486b6ac6433}} 
+\index{Sculptor@{Sculptor}!Sculptor@{Sculptor}}
+\index{Sculptor@{Sculptor}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{Sculptor()}{Sculptor()}}
+{\footnotesize\ttfamily Sculptor\+::\+Sculptor (\begin{DoxyParamCaption}\item[{int}]{\+\_\+nx,  }\item[{int}]{\+\_\+ny,  }\item[{int}]{\+\_\+nz }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_sculptor}{Sculptor} é o construtor que recebe como parâmetros os comprimentos em relação aos eixos cartesianos(x,y,z) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+nx} & \\
+\hline
+{\em \+\_\+ny} & \\
+\hline
+{\em \+\_\+nz} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_a8f159bf97458326f16d2e238e11be7ff}\label{class_sculptor_a8f159bf97458326f16d2e238e11be7ff}} 
+\index{Sculptor@{Sculptor}!````~Sculptor@{$\sim$\+Sculptor}}
+\index{````~Sculptor@{$\sim$\+Sculptor}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{$\sim$\+Sculptor()}{~Sculptor()}}
+{\footnotesize\ttfamily Sculptor\+::$\sim$\+Sculptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$\sim$\+Sculptor é o destrutor da classe 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sculptor_aa84a1b12b09e9e103fc8d78f8d1bc00f}\label{class_sculptor_aa84a1b12b09e9e103fc8d78f8d1bc00f}} 
+\index{Sculptor@{Sculptor}!cut\+Box@{cut\+Box}}
+\index{cut\+Box@{cut\+Box}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{cut\+Box()}{cutBox()}}
+{\footnotesize\ttfamily void Sculptor\+::cut\+Box (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{x1,  }\item[{int}]{y0,  }\item[{int}]{y1,  }\item[{int}]{z0,  }\item[{int}]{z1 }\end{DoxyParamCaption})}
+
+
+
+cut\+Box apaga uma caixa do espaço 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & \\
+\hline
+{\em x1} & \\
+\hline
+{\em y0} & \\
+\hline
+{\em y1} & \\
+\hline
+{\em z0} & \\
+\hline
+{\em z1} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_a84b3495724695476daa2e9b83df7cb03}\label{class_sculptor_a84b3495724695476daa2e9b83df7cb03}} 
+\index{Sculptor@{Sculptor}!cut\+Ellipsoid@{cut\+Ellipsoid}}
+\index{cut\+Ellipsoid@{cut\+Ellipsoid}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{cut\+Ellipsoid()}{cutEllipsoid()}}
+{\footnotesize\ttfamily void Sculptor\+::cut\+Ellipsoid (\begin{DoxyParamCaption}\item[{int}]{xc,  }\item[{int}]{yc,  }\item[{int}]{zc,  }\item[{int}]{rx,  }\item[{int}]{ry,  }\item[{int}]{rz }\end{DoxyParamCaption})}
+
+
+
+cut\+Ellipsoid apaga um elipsoide no espaço 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xc} & \\
+\hline
+{\em yc} & \\
+\hline
+{\em zc} & \\
+\hline
+{\em rx} & \\
+\hline
+{\em ry} & \\
+\hline
+{\em rz} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_a7fc1bd095f9f1019d1619673905f6cdc}\label{class_sculptor_a7fc1bd095f9f1019d1619673905f6cdc}} 
+\index{Sculptor@{Sculptor}!cut\+Sphere@{cut\+Sphere}}
+\index{cut\+Sphere@{cut\+Sphere}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{cut\+Sphere()}{cutSphere()}}
+{\footnotesize\ttfamily void Sculptor\+::cut\+Sphere (\begin{DoxyParamCaption}\item[{int}]{xc,  }\item[{int}]{yc,  }\item[{int}]{zc,  }\item[{int}]{raio }\end{DoxyParamCaption})}
+
+
+
+cut\+Sphere apaga uma esfera no espaço 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xc} & \\
+\hline
+{\em yc} & \\
+\hline
+{\em zc} & \\
+\hline
+{\em raio} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c}\label{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c}} 
+\index{Sculptor@{Sculptor}!cut\+Voxel@{cut\+Voxel}}
+\index{cut\+Voxel@{cut\+Voxel}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{cut\+Voxel()}{cutVoxel()}}
+{\footnotesize\ttfamily void Sculptor\+::cut\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+cut\+Voxel Apaga um voxel no espaço 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_aad4a793c55c48526fb0db2b14a6042cc}\label{class_sculptor_aad4a793c55c48526fb0db2b14a6042cc}} 
+\index{Sculptor@{Sculptor}!getA@{getA}}
+\index{getA@{getA}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{get\+A()}{getA()}}
+{\footnotesize\ttfamily float Sculptor\+::getA (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sculptor_a101cab6fc879fd4eb756aaa90043805c}\label{class_sculptor_a101cab6fc879fd4eb756aaa90043805c}} 
+\index{Sculptor@{Sculptor}!getB@{getB}}
+\index{getB@{getB}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{get\+B()}{getB()}}
+{\footnotesize\ttfamily float Sculptor\+::getB (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sculptor_a82bade484b1942db03407888b0821791}\label{class_sculptor_a82bade484b1942db03407888b0821791}} 
+\index{Sculptor@{Sculptor}!getG@{getG}}
+\index{getG@{getG}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{get\+G()}{getG()}}
+{\footnotesize\ttfamily float Sculptor\+::getG (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sculptor_ad7793360e2d6a11c4799b50e3cfaf017}\label{class_sculptor_ad7793360e2d6a11c4799b50e3cfaf017}} 
+\index{Sculptor@{Sculptor}!getisonplan@{getisonplan}}
+\index{getisonplan@{getisonplan}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{getisonplan()}{getisonplan()}}
+{\footnotesize\ttfamily bool Sculptor\+::getisonplan (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sculptor_a6ddea4b268d77d46085313a09746176b}\label{class_sculptor_a6ddea4b268d77d46085313a09746176b}} 
+\index{Sculptor@{Sculptor}!getR@{getR}}
+\index{getR@{getR}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{get\+R()}{getR()}}
+{\footnotesize\ttfamily float Sculptor\+::getR (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sculptor_a311ad7a0fb83fc67ac1f378be8e99fe1}\label{class_sculptor_a311ad7a0fb83fc67ac1f378be8e99fe1}} 
+\index{Sculptor@{Sculptor}!put\+Box@{put\+Box}}
+\index{put\+Box@{put\+Box}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{put\+Box()}{putBox()}}
+{\footnotesize\ttfamily void Sculptor\+::put\+Box (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{x1,  }\item[{int}]{y0,  }\item[{int}]{y1,  }\item[{int}]{z0,  }\item[{int}]{z1 }\end{DoxyParamCaption})}
+
+
+
+put\+Box Insere uma caixa no espaço 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & \\
+\hline
+{\em x1} & \\
+\hline
+{\em y0} & \\
+\hline
+{\em y1} & \\
+\hline
+{\em z0} & \\
+\hline
+{\em z1} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_aab6773c379cee65ef0e93de25079a23d}\label{class_sculptor_aab6773c379cee65ef0e93de25079a23d}} 
+\index{Sculptor@{Sculptor}!put\+Ellipsoid@{put\+Ellipsoid}}
+\index{put\+Ellipsoid@{put\+Ellipsoid}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{put\+Ellipsoid()}{putEllipsoid()}}
+{\footnotesize\ttfamily void Sculptor\+::put\+Ellipsoid (\begin{DoxyParamCaption}\item[{int}]{xc,  }\item[{int}]{yc,  }\item[{int}]{zc,  }\item[{int}]{rx,  }\item[{int}]{ry,  }\item[{int}]{rz }\end{DoxyParamCaption})}
+
+
+
+put\+Ellipsoid implementa um elipsoide no espaço 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xc} & \\
+\hline
+{\em yc} & \\
+\hline
+{\em zc} & \\
+\hline
+{\em rx} & \\
+\hline
+{\em ry} & \\
+\hline
+{\em rz} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_a7ad429e4c9bee30af79485b97a67885f}\label{class_sculptor_a7ad429e4c9bee30af79485b97a67885f}} 
+\index{Sculptor@{Sculptor}!put\+Sphere@{put\+Sphere}}
+\index{put\+Sphere@{put\+Sphere}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{put\+Sphere()}{putSphere()}}
+{\footnotesize\ttfamily void Sculptor\+::put\+Sphere (\begin{DoxyParamCaption}\item[{int}]{xc,  }\item[{int}]{yc,  }\item[{int}]{zc,  }\item[{int}]{raio }\end{DoxyParamCaption})}
+
+
+
+put\+Sphere implementa uma esfera no espaço 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xc} & \\
+\hline
+{\em yc} & \\
+\hline
+{\em zc} & \\
+\hline
+{\em raio} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_a4bdea3048b419d58e93074060eaa7b52}\label{class_sculptor_a4bdea3048b419d58e93074060eaa7b52}} 
+\index{Sculptor@{Sculptor}!put\+Voxel@{put\+Voxel}}
+\index{put\+Voxel@{put\+Voxel}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{put\+Voxel()}{putVoxel()}}
+{\footnotesize\ttfamily void Sculptor\+::put\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+put\+Voxel Insere um voxel no espaço 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_af1d69da01379874b0dfd6454787cb562}\label{class_sculptor_af1d69da01379874b0dfd6454787cb562}} 
+\index{Sculptor@{Sculptor}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void Sculptor\+::set\+Color (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{alpha }\end{DoxyParamCaption})}
+
+
+
+set\+Color altera a cor selecionada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em g} & \\
+\hline
+{\em b} & \\
+\hline
+{\em alpha} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sculptor_a58cb72d22001a5034f15383ca983830c}\label{class_sculptor_a58cb72d22001a5034f15383ca983830c}} 
+\index{Sculptor@{Sculptor}!write\+O\+FF@{write\+O\+FF}}
+\index{write\+O\+FF@{write\+O\+FF}!Sculptor@{Sculptor}}
+\subsubsection{\texorpdfstring{write\+O\+F\+F()}{writeOFF()}}
+{\footnotesize\ttfamily void Sculptor\+::write\+O\+FF (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+write\+O\+FF grava a escultura no formato O\+FF no arquivo especificado 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sculptor_8h}{sculptor.\+h}\item 
+\hyperlink{_sculptor_8cpp}{Sculptor.\+cpp}\end{DoxyCompactItemize}

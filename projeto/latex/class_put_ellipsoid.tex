@@ -1,0 +1,110 @@
+\hypertarget{class_put_ellipsoid}{}\section{Put\+Ellipsoid Class Reference}
+\label{class_put_ellipsoid}\index{Put\+Ellipsoid@{Put\+Ellipsoid}}
+
+
+A classe \hyperlink{class_put_ellipsoid}{Put\+Ellipsoid} implementa um elipsoide no espaço.  
+
+
+
+
+{\ttfamily \#include $<$putellipsoid.\+h$>$}
+
+
+
+Inheritance diagram for Put\+Ellipsoid\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_put_ellipsoid__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Put\+Ellipsoid\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_put_ellipsoid__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_put_ellipsoid_a52970ddea7bc1ff99835c06d190383b0}{Put\+Ellipsoid} (int x, int y, int z, int rx, int ry, int rz, float \hyperlink{class_figura_geometrica_a0a4f57efb1a6c525c8aeee34c92e7eab}{r}, float \hyperlink{class_figura_geometrica_a51930549bcb90d016b824f10f95df355}{g}, float \hyperlink{class_figura_geometrica_a25e5d6c21410103c25ec55c0117dac0d}{b}, float \hyperlink{class_figura_geometrica_ae7c8a027fcec3c357265b90458a4d165}{a})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_put_ellipsoid}{Put\+Ellipsoid} é o construtor da classe, que recebe como parâmetros as coordenadas do centro(x,y,z) os raios nos eixos(rx,ry,rz) e a cor(r,g,b,a) \end{DoxyCompactList}\item 
+void \hyperlink{class_put_ellipsoid_a961faff306dad93a4b68a35ad9c3027b}{draw} (\hyperlink{class_sculptor}{Sculptor} \&t)
+\begin{DoxyCompactList}\small\item\em draw desenha um Elipsoide para o objeto de tipo \hyperlink{class_sculptor}{Sculptor} especificado \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A classe \hyperlink{class_put_ellipsoid}{Put\+Ellipsoid} implementa um elipsoide no espaço. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_put_ellipsoid_a52970ddea7bc1ff99835c06d190383b0}\label{class_put_ellipsoid_a52970ddea7bc1ff99835c06d190383b0}} 
+\index{Put\+Ellipsoid@{Put\+Ellipsoid}!Put\+Ellipsoid@{Put\+Ellipsoid}}
+\index{Put\+Ellipsoid@{Put\+Ellipsoid}!Put\+Ellipsoid@{Put\+Ellipsoid}}
+\subsubsection{\texorpdfstring{Put\+Ellipsoid()}{PutEllipsoid()}}
+{\footnotesize\ttfamily Put\+Ellipsoid\+::\+Put\+Ellipsoid (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z,  }\item[{int}]{rx,  }\item[{int}]{ry,  }\item[{int}]{rz,  }\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_put_ellipsoid}{Put\+Ellipsoid} é o construtor da classe, que recebe como parâmetros as coordenadas do centro(x,y,z) os raios nos eixos(rx,ry,rz) e a cor(r,g,b,a) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+{\em rx} & \\
+\hline
+{\em ry} & \\
+\hline
+{\em rz} & \\
+\hline
+{\em r} & \\
+\hline
+{\em g} & \\
+\hline
+{\em b} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+Exemplo de utilização da classe \hyperlink{class_put_ellipsoid}{Put\+Ellipsoid}\+: 
+\begin{DoxyPre}
+\hyperlink{class_put_ellipsoid}{PutEllipsoid} pe(10,10,10,2,3,4,1,1,1,1)// Elipsoide centrada em (10,10,10) de raio 2 em,3 em y, 4 em z e cor branca(1,1,1) totalmente opaca(1)
+\end{DoxyPre}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_put_ellipsoid_a961faff306dad93a4b68a35ad9c3027b}\label{class_put_ellipsoid_a961faff306dad93a4b68a35ad9c3027b}} 
+\index{Put\+Ellipsoid@{Put\+Ellipsoid}!draw@{draw}}
+\index{draw@{draw}!Put\+Ellipsoid@{Put\+Ellipsoid}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Ellipsoid\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_sculptor}{Sculptor} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw desenha um Elipsoide para o objeto de tipo \hyperlink{class_sculptor}{Sculptor} especificado 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_figura_geometrica_a34585fd7c0bd7378fc69c4ee208e676c}{Figura\+Geometrica}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{putellipsoid_8h}{putellipsoid.\+h}\item 
+\hyperlink{putellipsoid_8cpp}{putellipsoid.\+cpp}\end{DoxyCompactItemize}
