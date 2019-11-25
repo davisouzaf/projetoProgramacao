@@ -4,6 +4,8 @@
 <p>A interface visual permite a criação de esculturas tridimensionais a partir dos planos do escultor. O software permite a criação de figuras e o armazenamento em formato .off. A figura abaixo apresenta a tela inicial do programa, onde a grade quadriculada branca é onde o usuário poderá desenhar.</p>
 <img src="https://github.com/davisouzaf/projetoProgramacao/blob/master/Tela%20inicial.png">
 <p>Os botões ta tela inicial correspondem às aos comandos de cada mátodo da classe sculptor, ao clicar em um deles, irá abrir uma caixa de diálogo que solicita os parâmetros das dimensões para cada método, como o raio ao clicar no botão cujo ícone é de uma esfera.</p>
+<p>Para salvar o arquivo, basta, ao terminar de desenhar a figura seguir: File>>Save File e escolher o nome e o diretório que deseja salvar a escultura</p>
+<p>para a visualização da imagem, é preciso seguir: File>>View solid, escolher o local onde armazenar a escultura e a mesma será exibida no programa meshlab(é preciso que esteja instalado na máquina para que funcione)</p>
 <h3>Classes criadas: </h3>
 <ul>
 <li><h4>Sculptor</h4></li>
